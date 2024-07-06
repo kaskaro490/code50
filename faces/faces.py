@@ -1,9 +1,16 @@
 
-answer = input("")
+def convert()
 
-convert-table:
+
+
+convert-table = str.mketrans(replacements)
+
+
+replacements = {
 ":)":"🙂",
 ":(":"😐",
+}
 
+answer = input("")
 print("")
 
