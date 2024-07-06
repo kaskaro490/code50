@@ -1,8 +1,9 @@
 def main():
     m = input("Give the mass of an object (in kilograms):")
-    c2 = 300000000*300000000
+    c = 300000000
+    c2 = c*c
     E = m*c2
-    print(f"The number of joules is: " + E)
+    print(f"The number of joules is: " + int(E))
 
 
 main()
