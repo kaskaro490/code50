@@ -1,7 +1,7 @@
 def main():
 
     answer = input("Common say something:")
-    print(answer.convert(answer))
+    print(convert(answer))
 
 
 def convert(answer):
