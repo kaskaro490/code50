@@ -1,14 +1,14 @@
 
 def convert(answer,replacements):
 
-    convert_table = str.mketrans(replacements)
-
+    convert_table = str.maketrans(replacements)
+    return answer.translate(convert_table)
 
 replacements = {
 ":)":"🙂",
 ":(":"😐",
 }
 
-answer = input("")
+answer = input("Common say something:")
 print("")
 
