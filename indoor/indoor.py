@@ -1,2 +1,2 @@
-input("say HELLO!")
-print()
+answer = input("say HELLO!")
+print(answer)
