@@ -1,5 +1,9 @@
 
 answer = input("")
 
-print("😐")
+convert-table:
+":)":"🙂",
+":(":"😐",
+
+print("")
 
