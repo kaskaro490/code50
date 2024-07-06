@@ -10,5 +10,6 @@ replacements = {
 }
 
 answer = input("Common say something:")
+
 print("")
 
