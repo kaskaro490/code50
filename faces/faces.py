@@ -1,15 +1,14 @@
+def main():
 
-def convert(answer, replacements):
+    answer = input("Common say something:")
+    print(answer.convert(answer))
 
-    convert_table = str.maketrans(replacements)
-    return answer.translate(convert_table)
 
-replacements = {
-":)":"🙂",
-":(":"😐",
-}
+def convert(answer):
 
-answer = input("Common say something:")
-answernew = convert(answer,replacements)
-print("answernew")
+    answer = answer.replace(":)","🙂")
+    answer = answer.replace(":(","😐")
+    return answer
 
+
+main()
