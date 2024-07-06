@@ -10,6 +10,6 @@ replacements = {
 }
 
 answer = input("Common say something:")
-
-print("")
+answernew = convert(answer,replacements)
+print("answernew")
 
