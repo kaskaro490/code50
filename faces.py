@@ -1,5 +1,6 @@
 def replacebyemojis
 
 answer = input("")
-:) =
-print(answer.)
+
+print(answer.🙁)
+
