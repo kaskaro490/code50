@@ -1,2 +1,2 @@
-answer = input("say HELLO!")
-print(answer)
+answer = input("say HELLO! ")
+print(answer.lower())
