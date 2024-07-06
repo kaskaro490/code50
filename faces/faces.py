@@ -7,7 +7,7 @@ def main():
 def convert(answer):
 
     answer = answer.replace(":)","🙂")
-    answer = answer.replace(":(","😐")
+    answer = answer.replace(":(","🙁")
     return answer
 
 
