@@ -1,2 +1,2 @@
 answer = input("Say something: ")
-print(answer.str.replace(old,new[ ,...]))
+print(answer.replace(" ","..."))
