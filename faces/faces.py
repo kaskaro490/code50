@@ -1,10 +1,8 @@
 
-def convert()
+def convert(answer,replacements):
 
-
-
-convert-table = str.mketrans(replacements)
-
+    convert-table = str.mketrans(replacements)
+    
 
 replacements = {
 ":)":"🙂",
