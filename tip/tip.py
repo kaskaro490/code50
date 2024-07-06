@@ -6,7 +6,7 @@ def main():
 
 
 def dollars_to_float(d):
-    d = dollars.replace("$","")
+    dollars = d.replace("$","")
     return float(d)
 
 def percent_to_float(p):
