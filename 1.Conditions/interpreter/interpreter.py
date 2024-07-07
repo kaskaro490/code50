@@ -6,7 +6,7 @@ def main():
     x = int(x)
     z = int(z)
 
-    result = interpreter(x, y, z)
+    result = float(interpreter(x, y, z))
 
     print(result)
 
@@ -14,13 +14,15 @@ def main():
 def interpreter(x, y, z):
     if y == "+":
         return x + z
-    elif y == "-"
+    elif y == "-":
         return x - z
-    elif y == "*"
+    elif y == "*":
         return x * z
-    elif y == "/"
-        if not z = 0
+    elif y == "/":
+        if not z == 0:
             return x / z
+
+    else: print("error")
 
 
 
