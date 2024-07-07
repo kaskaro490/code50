@@ -1,3 +1,7 @@
+filename = input("File name: ").lower()
+
+
+
 
 image/gif
 image/jpeg
