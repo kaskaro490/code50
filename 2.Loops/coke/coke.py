@@ -6,6 +6,8 @@ def main():
     if insert_coin in okcoins:
       due -= int(insert_coin)
       print(f"Amount Due: {due}")
+    else:
+      
   if due <= 0:
     print(f"Change Owed: {abs(due)}")
 
