@@ -14,6 +14,13 @@ def main():
 def interpreter(x, y, z):
     if y == "+":
         return x + z
+    elif y == "-"
+        return x - z
+    elif y == "*"
+        return x * z
+    elif y == "/"
+        return x / z
+    
 
 main()
 
