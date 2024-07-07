@@ -3,5 +3,5 @@ answer = input("What is the Answer to the Great Question of Life, the Universe, 
 if answer == int(42) or "forty-two" or "forty two":
     print("Yes")
 
-if answer != int(42) or "forty-two" or "forty two":
+elif answer != int(42) or "forty-two" or "forty two":
     print("No")
