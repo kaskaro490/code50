@@ -1,6 +1,5 @@
 breakfast time, lunch time, or dinner time
 
-24-hour time
 
 
 def main():
@@ -9,11 +8,13 @@ def main():
     x = int(x)
     y = int(y)
 
-    result = 
+    floattime = 
 
 def convert(time):
-    ...
 
+
+def wichmeal():
+    if
 
 if __name__ == "__main__":
     main()
