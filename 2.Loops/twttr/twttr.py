@@ -3,7 +3,7 @@ def main():
    input = input("Input: ")
    outputlist = twttr(input, vowels )
    print(outputlist)
-def twttr(input):
+def twttr(input, vowels ):
    outputlist = []
    for letter in input:
       if not letter in vowels:
