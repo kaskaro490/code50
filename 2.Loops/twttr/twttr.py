@@ -1,7 +1,7 @@
 def main():
    vowels = ["A","E","I","O","U","a","e","i","o","u"]
    input = input("Input: ")
-   outputlist = twttr(input)
+   outputlist = twttr(input, vowels )
    print(outputlist)
 def twttr(input):
    outputlist = []
