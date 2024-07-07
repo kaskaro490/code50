@@ -1,21 +1,24 @@
-breakfast time, lunch time, or dinner time
-
-
 
 def main():
     usertime = input("What time it is? ")
     x,y = usertime.split(":")
-    x = float(x)
+    x = int(x)
     y = int(y)
 
 
 
 def convert(time):
-    yfloat = ((y*100)/60)/100
-    floattime = x + yfloat
+    yfloat = float(((y*100)/60)/100)
+    floattime = float(x + yfloat)
 
 def wichmeal():
-    if
+    if 7 <= floattime <= 8:
+        print("breakfast time")
+    elif 12 <= floattime <= 13:
+        print("lunch time")
+    elif 18 <= floattime <= 19:
+        print("dinner time")
+
 
 if __name__ == "__main__":
     main()
