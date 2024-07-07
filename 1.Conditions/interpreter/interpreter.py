@@ -7,9 +7,9 @@ def main():
     print(expression)
 
 
-def interpreter(r):
+def interpreter():
     if y == "+":
-        r = x + z
+        return x + z
 
 main()
 
