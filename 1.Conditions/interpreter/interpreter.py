@@ -1,6 +1,6 @@
 def main():
 
-    expression = input("Expression: "))
+    expression = input("Expression: ")
 
     x, y, z = expression.split(" ")
 
