@@ -1,9 +1,9 @@
-answer = input("Greeting: ").strip()
+answer = input("Greeting: ").strip().lower()
 firstletter = answer[0]
 
 if answer == "hello":
-    print("$100")
+    print("$0")
 elif answer[0] == "h":
     print("$20")
 else:
-    print("$0")
+    print("$100")
