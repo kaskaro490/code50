@@ -1,18 +1,19 @@
 
 def main():
-    usertime = input("What time it is? ")
-    x,y = usertime.split(":")
-    x = int(x)
-    y = int(y)
+    time = input("What time it is? ")
 
-    answer = convert().wichmeal()
+
+    answer = convert(time).wichmeal()
     print(answer)
 
 def convert(time):
+    x,y = time.split(":")
+    x = int(x)
+    y = int(y)
     yfloat = float(((y*100)/60)/100)
     time = float(x + yfloat)
 
-def wichmeal():
+def wichmeal(time):
     if 7 <= time <= 8:
         print("breakfast time")
     elif 12 <= time <= 13:
