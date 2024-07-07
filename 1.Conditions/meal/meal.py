@@ -3,7 +3,7 @@ def main():
     time = input("What time it is? ")
 
 
-    answer = convert(time).wichmeal()
+    meal = convert(time).wichmeal(time)
     print(answer)
 
 def convert(time):
