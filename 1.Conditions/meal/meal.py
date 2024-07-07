@@ -8,7 +8,7 @@ def main():
     x = int(x)
     y = int(y)
 
-    floattime = 
+    yfloat = (y*100)/60)
 
 def convert(time):
 
