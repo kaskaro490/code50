@@ -4,8 +4,8 @@ def main():
   while due > 0:
     insert_coin = int(input("Insert a coin: "))
     if insert_coin in okcoins:
-      due -= insert_coin
-      print("Amount due: {due}")
+      due -= int(insert_coin)
+      print(f"Amount due: {due}")
   if due <= 0:
     print(f"Change owed: {abs(due)}"")
 
