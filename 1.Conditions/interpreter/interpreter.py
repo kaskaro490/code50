@@ -3,10 +3,12 @@ def main():
     expression = input("Expression: ")
 
     x, y, z = expression.split(" ")
-    x = float(x)
-    z = float(z)
+    #x = float(x)
+    #z = float(z)
 
-    print(expression)
+    result = float(interpreter(x, y, z))
+
+    print(result)
 
 
 def interpreter(x, y, z):
