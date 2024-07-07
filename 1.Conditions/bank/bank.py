@@ -1,4 +1,4 @@
-answer = input("Greeting: ")
+answer = input("Greeting: ").strip().lower()
 firstletter = answer[0]
 
 if answer[0].lower() == "h":
