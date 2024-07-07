@@ -7,7 +7,7 @@ def main():
       due -= int(insert_coin)
       print(f"Amount Due: {due}")
     else:
-      
+      print(f"Amount due: {due}")
   if due <= 0:
     print(f"Change Owed: {abs(due)}")
 
