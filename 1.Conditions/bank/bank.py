@@ -3,8 +3,8 @@ firstletter = answer[0]
 
 if answer == "hello":
     print("$0")
-elif answer
-
+elif answer.startswith("hello")
+    print("$0")
 elif answer[0] == "h":
     print("$20")
 else:
