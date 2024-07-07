@@ -3,8 +3,8 @@ def main():
     expression = input("Expression: ")
 
     x, y, z = expression.split(" ")
-    x = float(x)
-    z = float(z)
+    x = int(x)
+    z = int(z)
 
     result = interpreter(x, y, z)
 
