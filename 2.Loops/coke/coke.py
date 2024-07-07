@@ -8,4 +8,6 @@ def main():
       print("Amount due: " + due)
   if due <= 0:
     print("Change owed: " + due.abs())
-    
+
+
+main ()
