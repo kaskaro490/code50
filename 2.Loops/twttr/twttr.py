@@ -1,5 +1,5 @@
 def main():
-   vowels = [A,E,I,O,U,a,e,i,o,u]
+   vowels = ["A","E","I","O","U","a","e","i","o","u"]
    input = input("Input: ")
    print(outputlist)
 def twttr(input):
