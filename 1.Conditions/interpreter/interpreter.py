@@ -19,8 +19,10 @@ def interpreter(x, y, z):
     elif y == "*"
         return x * z
     elif y == "/"
-        return x / z
-    
+        if z >= 0
+            return x / z
+        else: print(")
+
 
 main()
 
