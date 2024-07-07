@@ -1,12 +1,13 @@
 def main():
    vowels = ["A","E","I","O","U","a","e","i","o","u"]
    input = input("Input: ")
+   outputlist = twttr(input)
    print(outputlist)
 def twttr(input):
    outputlist = []
    for letter in input:
       if not letter in vowels:
-         letter.append(outputlist)
+         outputlist.append(letter)
 
    return ''. join(outputlist)
 
