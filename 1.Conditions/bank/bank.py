@@ -1,7 +1,7 @@
-answer = input("Greeting: ").lower()
+answer = input("Greeting: ")
 firstletter = answer[0]
 
-if answer[0] == "h":
+if answer[0].lower() == "h":
     if answer == "hello":
         print("$100")
     else: print("$20")
