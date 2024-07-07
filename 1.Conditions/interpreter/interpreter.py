@@ -1,13 +1,15 @@
 def main():
 
-    expression = input("Expression: ")
+    expression = input("Expression: "))
 
     x, y, z = expression.split(" ")
 
+    print(expression)
+
+
+def interpreter(r):
     if y == "+":
-
-def interpreter(r)
-
+        r = x + z
 
 main()
 
