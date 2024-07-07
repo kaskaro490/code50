@@ -1,6 +1,14 @@
-expression = input("Expression: ")
+def main():
 
-x, y, z = expression.split(" ")
+    expression = input("Expression: ")
 
-if y == "+"
-    
+    x, y, z = expression.split(" ")
+
+    if y == "+":
+
+def interpreter(r)
+
+
+main()
+
+
