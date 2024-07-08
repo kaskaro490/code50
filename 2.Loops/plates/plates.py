@@ -28,7 +28,7 @@ def first_2_letters(s):
         return False
 
 def no_middle_numbers(s):
-    for i in range(len(s)):
+    for i in range(2, len(s)):
         if s[i].isdigit():
             start = i
             print(f"Valeur start: ",{start})
