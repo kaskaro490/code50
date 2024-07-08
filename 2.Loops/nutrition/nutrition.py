@@ -25,7 +25,7 @@ def main():
 
     Fruit = input("Fruit: ").lower()
     for fruits in fruitcalories:
-        print(fruits["{Fruit}"])
+        print(["{fruitcalories[Fruit]}"])
 
 
 main()
