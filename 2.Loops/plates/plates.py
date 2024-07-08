@@ -24,6 +24,7 @@ def is_valid(s, plate, charnumber):
                     s += 1
                     if s.isalpha():
                         return False
+                return True
         else:
             return False
 
