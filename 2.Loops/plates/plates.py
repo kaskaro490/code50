@@ -23,13 +23,13 @@ def check_characters(s):
     return s.isalnum()
 
 def check_numbers(s):
-    has_number = False
+    number_already = False
     for char in s:
         if char.isdigit():
-            if char == '0' and not has_number:
+            if char == '0' and not number_already:
                 return False  # No leading zero in numbers
-            has_number  = True
-        elif has_number:
+            number_already  = True
+        elif number_already:
             return False  # Letters found after numbers
     return True
 
