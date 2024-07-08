@@ -34,7 +34,10 @@ def no_middle_numbers(plate):
             while i < len(plate) and plate[i].isdigit():
                i += 1
             end = i
-            if plate[start -1].isalpha() and plate[end].isalpha()
+            if plate[start -1].isalpha() and plate[end].isalpha():
                 return False
+            elif plate[start = 0]:
+                return False
+def firs_zero_digit():
 
 main()
