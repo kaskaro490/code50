@@ -24,7 +24,7 @@ def check_characters(s):
 
 def check_numbers(s):
     has_number = False
-    for i, char in enumerate(s):
+    for char in s:
         if char.isdigit():
             if char == '0' and not has_number:
                 return False  # No leading zero in numbers
