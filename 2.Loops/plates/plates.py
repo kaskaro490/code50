@@ -27,7 +27,8 @@ def first_2_letters(plate):
     else:
         return False
 
-def no_middle_numbers():
-    is
+def no_middle_numbers(plate):
+    length = len
+    for i in range(1 < length - 1)
 
 main()
