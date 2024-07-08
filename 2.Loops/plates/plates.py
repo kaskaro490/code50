@@ -18,7 +18,8 @@ def is_valid(s, plate):
             index = 0
             for s in plate:
                 if s.isalnum():
-                    
+
+
 
 
 
