@@ -11,7 +11,8 @@ def main():
 def is_valid(s):
     #Vérifier que le nom contient bien entre 2 et 6 caractères
     if 2<= charnumber <=6:
-
+        for s in plate:
+            if plate[]
 
 
 #Vérifier que le nom commence bien par deux lettres
