@@ -1,7 +1,7 @@
 # Demander le nom de plaque de l'utilisateur et lui donne rle résultat
 def main():
     plate = input("Plate: ").upper()
-    letters: 
+    letters:
 
     charnumber = len(plate)
     if is_valid(plate):
@@ -14,7 +14,9 @@ def is_valid(s):
     #Vérifier que le nom contient bien entre 2 et 6 caractères
     if 2<= charnumber <=6:
         for s in plate:
-            if plate[:2]
+            if plate[:2].isalpha():
+
+            else: 
 
 
 #Vérifier que le nom commence bien par deux lettres
