@@ -12,8 +12,9 @@ def is_valid(s):
 
 
 #Vérifier que le nom contien bien entre 2 et 6 caractères
-def charnumbers():
-    
+def charnumbers(plate):
+    for char in plate:
+        if char
 
 #Vérifier que le nom commence bien par deux lettres
 
