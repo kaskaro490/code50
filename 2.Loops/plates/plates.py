@@ -20,7 +20,7 @@ def is_valid(s, plate):
                 if s.isalpha()
                     s += 1
                 elif s.isdigit():
-                    if
+                    if s + 1
 
 
 
