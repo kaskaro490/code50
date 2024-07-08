@@ -39,5 +39,6 @@ def no_middle_numbers(s):
             elif s[start] == 0:
                 return False
             return True
-
+        else:
+            return True
 main()
