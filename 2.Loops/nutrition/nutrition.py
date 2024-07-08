@@ -1,6 +1,6 @@
 def main():
 
-FruitCalories = {
+    FruitCalories = {
 "Apple": "130",
 "Avocado": "50",
 "Banana": "110",
@@ -23,8 +23,8 @@ FruitCalories = {
 "Watermelon": "80"
 }
 
-Fruit = input("Fruit: ")
-print("")
+    Fruit = input("Fruit: ").lower()
+    print(FruitCalories[{Fruit}])
 
 
 main()
