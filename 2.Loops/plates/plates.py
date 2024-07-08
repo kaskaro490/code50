@@ -29,6 +29,6 @@ def first_2_letters(plate):
         return False
 
 def no_middle_numbers():
-    
+    is 
 
 main()
