@@ -29,7 +29,7 @@ def first_2_letters(s):
 
 def no_middle_numbers(s):
     for i in s:
-        if s[i].isdigit():
+        if i.isdigit():
             start = i
             while s[i].isdigit():
                 i += 1
