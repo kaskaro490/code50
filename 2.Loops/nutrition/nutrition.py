@@ -23,8 +23,10 @@ def main():
     "Watermelon": "80"
     }
 
-    Fruit = input("Fruit: ").title()
-    print(f"Calories: {fruitcalories[Fruit]}")
-
+    fruit = input("Fruit: ").title()
+    if fruit in fruitcalories:
+        print(f"Calories: {fruitcalories[fruit]}")
+    else:
+        print("")
 
 main()
