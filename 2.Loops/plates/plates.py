@@ -30,6 +30,7 @@ def first_2_letters(plate):
 def no_middle_numbers(plate):
     length = len(plate)
     for i in range(1 < length - 1):
-        if plate[i]
+        if plate[i].isdigit():
+            
 
 main()
