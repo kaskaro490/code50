@@ -2,7 +2,6 @@ def main():
 
     plate = input("Plate: ")
     charnumber = len(plate)
-    s = plate.upper()
 
     if is_valid(plate):
         print("Valid")
@@ -29,6 +28,6 @@ def first_2_letters(plate):
         return False
 
 def no_middle_numbers():
-    is 
+    is
 
 main()
