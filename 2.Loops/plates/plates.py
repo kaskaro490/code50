@@ -29,8 +29,8 @@ def first_2_letters(s):
 
 def no_middle_numbers(s):
     for i in range(2, len(s)):
-        if s[i].isdigit():
-            
+        if not s[i].isalpha() and s[i == 0]:
+
             start = i
             while i < len(s) and s[i + 1].isalpha():
                i += 1
@@ -40,5 +40,5 @@ def no_middle_numbers(s):
 
             return True
         else:
-            return True
+            return False
 main()
