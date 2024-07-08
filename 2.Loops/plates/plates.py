@@ -31,15 +31,18 @@ def no_middle_numbers(s):
     for i in range(len(s)):
         if s[i].isdigit():
             start = i
+            print(f"Valeur start: ",{start})
             if s[i].isdigit():
                 print("i + 1")
                 i += 1
+            end = i
+        else
 
-            end = i - 1
-            if s[start - 1].isalpha() and s[end + 1].isalpha():
-                return False
-            elif s[start].isdigit() and s[len(s)].isdigit():
-                return True
+           # print(f"Valeur end: ",{end})
+           # if s[start - 1].isalpha() and s[end + 1].isalpha():
+            #    return False
+            #elif s[start].isdigit() and s[len(s)].isdigit():
+             #   return True
 
 
 main()
