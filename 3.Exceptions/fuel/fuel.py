@@ -1,8 +1,10 @@
 def main():
 
     # demander d'entrer une fraction
-    userfraction = input("Fraction: ").split(x,y,z)
+    fraction = input("Fraction: ")
     # Split l'input en X/Y
+    x, y = fraction.split(""/"")
+    
 
     # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
