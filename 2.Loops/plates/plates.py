@@ -28,24 +28,19 @@ def first_2_letters(s):
         return False
 
 def no_middle_numbers(s):
-    for i in range(2, len(s)):
-        if s[i].isdigit() and s[i]:
+    for i in range(2, len(s) - 1):
+        if not s[i].isalpha():
             start = i
-
-            if s[i].isdigit():
-                print("i + 1")
-                i += 1
+            while i < len(s) and s[i + 1].isalpha():
+               i += 1
             end = i
-            print(f"Valeur start: ",{start})
-            print(f"Valeur end: ",{end})
-
-
-            # if s[start - 1].isalpha() and s[end].isalpha():
-                 #return False
+            if s[start - 1].isalpha() and s[end].isalpha():
+                return False
+            elif s[i] == '0':
+                return False
+            return True
         else:
             return True
-            #elif s[start].isdigit() and s[len(s)].isdigit():
-             #   return True
 
 
 main()
