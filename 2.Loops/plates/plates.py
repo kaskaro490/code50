@@ -11,7 +11,7 @@ def main():
 
 def is_valid(s):
     # Vérifier si toutes les conditions sont remplies
-    return no_middle_numbers(s) # and len_plate_minmax(s) and first_2_letters(s)
+    return no_middle_numbers(s) and len_plate_minmax(s) and first_2_letters(s)
 
 def len_plate_minmax(s):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
