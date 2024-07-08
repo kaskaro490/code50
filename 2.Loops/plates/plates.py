@@ -37,10 +37,9 @@ def no_middle_numbers(s):
                 i += 1
             end = i
 
+        if s[start - 1].isalpha() and s[end + 1].isalpha():
+            return False
 
-           # print(f"Valeur end: ",{end})
-           # if s[start - 1].isalpha() and s[end + 1].isalpha():
-            #    return False
             #elif s[start].isdigit() and s[len(s)].isdigit():
              #   return True
 
