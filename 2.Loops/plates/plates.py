@@ -6,12 +6,7 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    return (
-        check_length(s) and
-        check_start_letters(s) and
-        check_characters(s) and
-        check_numbers(s)
-    )
+    return check_length(s) and check_start_letters(s) and check_characters(s) and check_numbers(s)
 
 def check_length(s):
     return 2 <= len(s) <= 6
