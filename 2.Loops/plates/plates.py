@@ -36,7 +36,7 @@ def no_middle_numbers(plate):
             end = i
             if plate[start -1].isalpha() and plate[end].isalpha():
                 return False
-            elif plate[start = 0]:
+            elif plate[start == 0]:
                 return False
 def firs_zero_digit():
 
