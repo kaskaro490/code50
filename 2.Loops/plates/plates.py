@@ -1,7 +1,7 @@
 # Demander le nom de plaque de l'utilisateur et lui donne rle résultat
 def main():
     plate = input("Plate: ").upper()
-    s = 0
+
 
     if is_valid(s, plate):
         print("Valid")
@@ -16,7 +16,7 @@ def is_valid(s, plate):
         #Vérifier que le début du nom contient bien 2 lettres
         if plate[:2].isalpha():
             #Vérifier que le nom n'a pas de chiffre entre les lettres
-
+            s = 0
             for s in plate:
                 if s.isalpha()
                     s += 1
