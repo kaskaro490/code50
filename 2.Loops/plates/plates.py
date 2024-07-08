@@ -1,46 +1,37 @@
 def main():
-
-    plate = input("Plate: ")
-
-
+    plate = input("Enter vanity plate: ")
     if is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
 
-
 def is_valid(s):
-    # Vérifier si toutes les conditions sont remplies
-    return no_middle_numbers(s) and len_plate_minmax(s) and first_2_letters(s)
+    return (
+        check_length(s) and
+        check_start_letters(s) and
+        check_characters(s) and
+        check_numbers(s)
+    )
 
-def len_plate_minmax(s):
-    #Vérifier que le nom contienne bien entre 2 et 6 caractères
-    if 2<= len(s) <=6:
-        return True
-    else:
-        return False
+def check_length(s):
+    return 2 <= len(s) <= 6
 
-def first_2_letters(s):
-    #Vérifier que le début du nom contient bien 2 lettres
-    if s[:2].isalpha():
-        return True
-    else:
-        return False
+def check_start_letters(s):
+    return s[:2].isalpha()
 
-def no_middle_numbers(s):
-    for i in range(2, len(s) - 1):
-        if not s[i].isalpha():
-            start = i
-            while i < len(s) and s[i + 1].isalpha():
-               i += 1
-            end = i
-            if s[start - 1].isalpha() and s[end].isalpha():
-                return False
-            elif s[i] == '0':
-                return False
-            return True
-        else:
-            return True
+def check_characters(s):
+    return s.isalnum()
 
+def check_numbers(s):
+    has_number = False
+    for i, char in enumerate(s):
+        if char.isdigit():
+            if char == '0' and not has_number:
+                return False  # No leading zero in numbers
+            has_number = True
+        elif has_number:
+            return False  # Letters found after numbers
+    return True
 
-main()
+if __name__ == "__main__":
+    main()
