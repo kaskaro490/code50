@@ -10,7 +10,7 @@ def main():
 
 
 def is_valid(s):
-    ...
+    if 
 
 def lenplate(charnumber):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
