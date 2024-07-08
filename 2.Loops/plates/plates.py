@@ -33,5 +33,4 @@ def check_numbers(s):
             return False  # Letters found after numbers
     return True
 
-if __name__ == "__main__":
-    main()
+main()
