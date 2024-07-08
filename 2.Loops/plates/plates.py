@@ -8,7 +8,7 @@ def main():
 
 
 def is_valid(s):
-    if 
+    for 
 
 
 main()
