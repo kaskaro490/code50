@@ -36,7 +36,7 @@ def no_middle_numbers(s):
             end = i
             if s[start - 1].isalpha() and s[end].isalpha():
                 return False
-            elif s[start] == 0:
+            elif start == 0:
                 return False
             return True
         else:
