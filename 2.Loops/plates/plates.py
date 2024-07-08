@@ -28,10 +28,10 @@ def first_2_letters(s):
         return False
 
 def no_middle_numbers(s):
-    for i in s:
-        if i.isdigit():
+    for i in range(len(s)):
+        if s[i].isdigit():
             start = i
-            while i.isdigit():
+            while s[i].isdigit():
                 i += 1
 
             end = i - 1
