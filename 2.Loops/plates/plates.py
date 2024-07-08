@@ -12,7 +12,7 @@ def main():
 def is_valid(s):
     if
 
-def len_plate_minmax():
+def len_plate_minmax(plate):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
     if 2<= len(plate) <=6:
         return True
@@ -37,6 +37,6 @@ def no_middle_numbers(plate):
                 return False
             elif plate[start == 0]:
                 return False
-def firs_zero_digit():
+
 
 main()
