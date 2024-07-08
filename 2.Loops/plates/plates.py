@@ -34,7 +34,7 @@ def no_middle_numbers(s):
             while i < len(s) and s[i].isdigit():
                i += 1
             end = i
-            if s[start -1].isalpha() and s[end].isalpha():
+            if s[start - 1].isalpha() and s[end + 1].isalpha():
                 return False
             elif s[start] == 0:
                 return False
