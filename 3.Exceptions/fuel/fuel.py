@@ -1,5 +1,5 @@
 def main():
-
+    while True:
         try:
             # demander d'entrer une fraction
             fraction = input("Fraction: ")
