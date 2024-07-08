@@ -24,7 +24,7 @@ def main():
     }
 
     Fruit = input("Fruit: ").title()
-    print(f"{fruitcalories[Fruit]}")
+    print(f"Calories: {fruitcalories[Fruit]}")
 
 
 main()
