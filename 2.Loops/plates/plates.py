@@ -30,8 +30,7 @@ def first_2_letters(s):
 def no_middle_numbers(s):
     for i in range(2, len(s)):
         if s[i].isdigit():
-            if i == 0:
-                return False
+            
             start = i
             while i < len(s) and s[i + 1].isalpha():
                i += 1
