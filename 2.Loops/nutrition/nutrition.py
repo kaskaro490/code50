@@ -23,9 +23,8 @@ def main():
     "Watermelon": "80"
     }
 
-    Fruit = input("Fruit: ").lower()
-    for fruits in fruitcalories:
-        print(["{fruitcalories[Fruit]}"])
+    Fruit = input("Fruit: ").title()
+    print(f"{fruitcalories[Fruit]}")
 
 
 main()
