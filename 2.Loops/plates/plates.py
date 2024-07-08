@@ -17,7 +17,8 @@ def is_valid(s, plate):
             #Vérifier que le nom n'a pas de chiffre entre les lettres
             index = 0
             for s in plate:
-                if s
+                if s.isalnum():
+                    
 
 
 
