@@ -9,7 +9,7 @@ def main():
 
 #Vérifier qu'un nom de plaque est valide sur tous les paramètres
 def is_valid(s):
-    #Vérifier que le nom contien bien entre 2 et 6 caractères
+    #Vérifier que le nom contient bien entre 2 et 6 caractères
     if 2<= charnumber <=6:
 
 
