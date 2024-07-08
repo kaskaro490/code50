@@ -13,12 +13,22 @@ def main():
 def is_valid(s):
     ...
 
-def lenplate():
+def lenplate(charnumber):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
 
     if 2<= charnumber <=6:
         return True
     else:
         return False
+
+def first_2_letters(plate):
+    #Vérifier que le début du nom contient bien 2 lettres
+    if plate[:2].isalpha():
+        return True
+    else:
+        return False
+
+def no_middle_numbers():
+    
 
 main()
