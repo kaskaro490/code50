@@ -23,4 +23,8 @@ FruitCalories = {
 "Watermelon": "80"
 }
 
+Fruit = input("Fruit: ")
+print("")
+
+
 main()
