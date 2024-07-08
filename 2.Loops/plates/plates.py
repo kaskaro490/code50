@@ -28,7 +28,7 @@ def check_numbers(s):
         if char.isdigit():
             if char == '0' and not has_number:
                 return False  # No leading zero in numbers
-            has_number = True
+            has_number  = True
         elif has_number:
             return False  # Letters found after numbers
     return True
