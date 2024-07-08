@@ -4,7 +4,7 @@ def main():
         # demander d'entrer une fraction
         fraction = input("Fraction: ")
         # Split l'input en X/Y
-        x, y = fraction.split("/")
+        x, y = int(fraction.split("/"))
         #print(f"{x} and {y}")
 
         # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
