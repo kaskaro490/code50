@@ -18,7 +18,7 @@ def is_valid(s, plate, charnumber):
             #Vérifier que le nom n'a pas de chiffre entre les lettres
             s = 0
             for s in plate:
-                if s.isalpha()
+                if s.isalpha():
                     s += 1
                 elif s.isdigit():
                     s += 1
