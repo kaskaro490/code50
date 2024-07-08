@@ -11,32 +11,32 @@ def main():
 
 def is_valid(s):
     # Vérifier si toutes les conditions sont remplies
-    return len_plate_minmax(plate) and first_2_letters(plate) and no_middle_numbers(plate)
+    return len_plate_minmax(s) and first_2_letters(s) and no_middle_numbers(s)
 
-def len_plate_minmax(plate):
+def len_plate_minmax(x):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
-    if 2<= len(plate) <=6:
+    if 2<= len(x) <=6:
         return True
     else:
         return False
 
-def first_2_letters(plate):
+def first_2_letters(y):
     #Vérifier que le début du nom contient bien 2 lettres
-    if plate[:2].isalpha():
+    if y[:2].isalpha():
         return True
     else:
         return False
 
-def no_middle_numbers(plate):
-    for i in range(2, len(plate) - 1):
-        if plate[i].isdigit():
+def no_middle_numbers(z):
+    for i in range(2, len(z) - 1):
+        if z[i].isdigit():
             start = i
-            while i < len(plate) and plate[i].isdigit():
+            while i < len(z) and z[i].isdigit():
                i += 1
             end = i
-            if plate[start -1].isalpha() and plate[end].isalpha():
+            if z[start -1].isalpha() and z[end].isalpha():
                 return False
-            elif plate[start == 0]:
+            elif z[start == 0]:
                 return False
 
 
