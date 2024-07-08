@@ -7,7 +7,7 @@ def main():
     "Cantaloupe": "50",
     "Grapefruit": "60",
     "Grapes": "90",
-    "Honeydew melon": "50",
+    "Honeydew Melon": "50",
     "Kiwifruit": "90",
     "Lemon": "15",
     "Lime": "20",
@@ -18,7 +18,7 @@ def main():
     "Pineapple": "50",
     "Plums": "70",
     "Strawberries": "50",
-    "Sweet cherries": "100",
+    "Sweet Cherries": "100",
     "Tangerine": "50",
     "Watermelon": "80"
     }
