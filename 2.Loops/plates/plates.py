@@ -32,6 +32,6 @@ def no_middle_numbers(plate):
     for i in range(1 < length - 1):
         if plate[i].isdigit():
             start = i
-            if 
+            while i < lenght and 
 
 main()
