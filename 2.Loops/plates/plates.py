@@ -3,13 +3,13 @@ def main():
     plate = input("Plate: ").upper()
 
 
-    if is_valid(s, plate):
+    if is_valid(s, plate, charnumber):
         print("Valid")
     else:
         print("Invalid")
 
 #Vérifier qu'un nom de plaque est valide sur tous les paramètres
-def is_valid(s, plate):
+def is_valid(s, plate, charnumber):
     #Vérifier que le nom contient bien entre 2 et 6 caractères
     charnumber = len(plate)
     if 2<= charnumber <=6:
