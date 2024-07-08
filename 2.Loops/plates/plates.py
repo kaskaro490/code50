@@ -31,6 +31,8 @@ def no_middle_numbers(s):
     for i in s:
         if s[i].isdigit():
             start = i
-            
+            while s[i].isdigit():
+                i += 1
+                
 
 main()
