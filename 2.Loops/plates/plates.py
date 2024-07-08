@@ -11,7 +11,7 @@ def main():
 
 def is_valid(s):
     # Vérifier si toutes les conditions sont remplies
-    return len_plate_minmax(s) and first_2_letters(s) and no_middle_numbers(s)
+    return no_middle_numbers(s) # and len_plate_minmax(s) and first_2_letters(s)
 
 def len_plate_minmax(s):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
@@ -28,7 +28,7 @@ def first_2_letters(s):
         return False
 
 def no_middle_numbers(s):
-    for i in range(1, 5):
+    for i in range(2, len(s)):
         if s[i].isdigit():
             start = i
 
@@ -40,7 +40,8 @@ def no_middle_numbers(s):
             print(f"Valeur end: ",{end})
             if s[start - 1].isalpha() and s[end].isalpha():
                 return False
-
+        else:
+            return True
             #elif s[start].isdigit() and s[len(s)].isdigit():
              #   return True
 
