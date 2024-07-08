@@ -5,8 +5,8 @@ def main():
             fraction = input("Fraction: ")
             # Split l'input en X/Y
             x, y = fraction.split("/")
-            x = round(float(x))
-            y = round(float(y))
+            x = int(round(float(x)))
+            y = int(round(float(y)))
             print(f"{x} and {y}")
 
             # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
