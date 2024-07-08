@@ -34,6 +34,6 @@ def no_middle_numbers(plate):
             while i < len(plate) and plate[i].isdigit():
                i += 1
             end = i
-            if start > 0 and end < length
+            if start > 0 and end < length and plate[start -1].isalpha() and pla
 
 main()
