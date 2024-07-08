@@ -7,9 +7,12 @@ def main():
         x, y = fraction.split("/")
         # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
         percentage = (x*100)/y
+        print(f"{percentage}")
+
         # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
-        
+
     except:
+        print("error")
 
 
 
