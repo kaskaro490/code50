@@ -1,7 +1,7 @@
 def main():
 
     plate = input("Plate: ")
-    c
+
 
     if is_valid(plate):
         print("Valid")
@@ -10,7 +10,7 @@ def main():
 
 
 def is_valid(s):
-    if
+    
 
 def len_plate_minmax(plate):
     #Vérifier que le nom contienne bien entre 2 et 6 caractères
