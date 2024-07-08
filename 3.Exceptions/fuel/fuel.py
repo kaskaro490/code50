@@ -5,7 +5,7 @@ def main():
         fraction = input("Fraction: ")
         # Split l'input en X/Y
         x, y = fraction.split("/")
-        x = int(x)
+        x = int(x..rounded())
         y = int(y)
         print(f"{x} and {y}")
 
