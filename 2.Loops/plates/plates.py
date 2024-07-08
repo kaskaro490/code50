@@ -28,13 +28,13 @@ def first_2_letters(s):
         return False
 
 def no_middle_numbers(s):
-    for i in range(2, len(s)):
+    for i in range(2, len(s) - 1):
         if not s[i].isalpha():
             start = i
             while i < len(s) and s[i + 1].isalpha():
                i += 1
             end = i
-            if s[start - 1].isalpha() and s[end - 1].isalpha():
+            if s[start - 1].isalpha() and s[end].isalpha():
                 return False
             elif s[i] == '0':
                 return False
