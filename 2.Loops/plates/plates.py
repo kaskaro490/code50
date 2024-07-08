@@ -28,7 +28,7 @@ def first_2_letters(plate):
         return False
 
 def no_middle_numbers(plate):
-    for i in range(1 < len(plate) - 1):
+    for i in range(2 < len(plate) - 1):
         if plate[i].isdigit():
             start = i
             while i < len(plate) and plate[i].isdigit():
