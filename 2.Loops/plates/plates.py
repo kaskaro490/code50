@@ -1,6 +1,6 @@
 def main():
-    plate = input("Plate: ")
-    
+    plate = input("Plate: ").upper()
+
     if is_valid(plate):
         print("Valid")
     else:
@@ -8,7 +8,7 @@ def main():
 
 
 def is_valid(s):
-    ...
+    if
 
 
 main()
