@@ -8,8 +8,9 @@ def main():
         # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
         percentage = (x*100)/y
         # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
-    except:
         
+    except:
+
 
 
 main()
