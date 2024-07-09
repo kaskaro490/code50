@@ -16,12 +16,14 @@ def main():
     menulower = {key.lower(): value for key, value in menu.items()}
     total == 0
     print(total(menulower))
+
+    
 def total(menulower): # Fonction de prise de commande
     while True:
         try:
             item = input("Item: ").lower() # Ajout d'un Item
             if item in menulower:
-                total += menulower["{item]}"] # ajout du prix de l'article au total de la commande
+                total += menulower[item] # ajout du prix de l'article au total de la commande
 
         except EOFError:
             print(f"Total: {total}")
@@ -30,6 +32,6 @@ def total(menulower): # Fonction de prise de commande
             if not item in menulower:
                pass
 
-        
+
 
 main()
