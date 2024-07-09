@@ -13,7 +13,7 @@ menu = {
     "Tortilla Salad": 8.00
 }.lower()
 
-
+menulower = {}
 
 
 def total() # Fonction de prise de commande
