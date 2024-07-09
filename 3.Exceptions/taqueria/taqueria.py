@@ -29,7 +29,8 @@ def total() # Fonction de prise de commande
         except not in menulower:
             pass
 
-
+        except EOFError:
+            print()
 
 
 main()
