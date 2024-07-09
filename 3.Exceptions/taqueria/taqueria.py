@@ -19,15 +19,15 @@ def main():
     print(Total)
 
 
-def total(menulower, total): # Fonction de prise de commande
+def total(menulower, i): # Fonction de prise de commande
     while True:
-        total == 0
+        total = i
         try:
 
             item = input("Item: ").lower() # Ajout d'un Item
             if item in menulower:
-                total += menulower[item] # ajout du prix de l'article au total de la commande
-
+                i += menulower[item] # ajout du prix de l'article au total de la commande
+                print(total)
 
 
         except EOFError:
@@ -36,7 +36,7 @@ def total(menulower, total): # Fonction de prise de commande
         except:
             pass
 
-        print(total)
+
 
 
 
