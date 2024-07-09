@@ -17,7 +17,7 @@ def main():
 
     print(menu["Taco"])
     print(menulower["taco"])
-    print(total(menulower, total))
+    print(f"Total: total(menulower, total)")
 
 
 def total(menulower, total): # Fonction de prise de commande
