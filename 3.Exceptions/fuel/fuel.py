@@ -8,7 +8,7 @@ def main():
     else:
         print(f"{percentage}%")
 
-def userfraction():
+def userfraction(): # Fonction de conversion de fraction en pourcentage arrondi
     while True:
         try:
 
@@ -17,11 +17,11 @@ def userfraction():
 
             x = int(x)
             y = int(y)
-            if x <= y: # Si x est inférieur ou égal
-                return int(round((x*100)/y)) # Convertir et retourner la fraction en pourcentage arrondi à l'intégral le plus proche
+            if x <= y: # Si x est inférieur ou égal à y, envoyer le résultat
+                return int(round((x*100)/y)) # Convertir et envoyer le résultat arrondi à l'intégral le plus proche
 
         except (ValueError, ZeroDivisionError) as e:
-            print(f"{e}")
+            pass
 
         except x > y:
             pass
