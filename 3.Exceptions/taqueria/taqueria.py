@@ -16,7 +16,7 @@ def main():
 menulower = {key.lower(): value for key, value in menu.items()}
 total == 0
 
-def total() # Fonction de prise de commande
+def total(): # Fonction de prise de commande
     while True:
         try:
             item = input("Item: ").lower() # Ajout d'un Item
@@ -25,8 +25,9 @@ def total() # Fonction de prise de commande
 
 
 
-        except not in menulower:
-            pass
+        except:
+            if not item in menulower:
+                pass
 
         except EOFError:
             print(f"Total: {total}")
