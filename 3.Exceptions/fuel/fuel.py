@@ -11,13 +11,14 @@ def main():
 def userfraction():
     while True:
         try:
+
             fraction = input("Fraction: ") # Demander d'entrer une fraction
 
             x, y = fraction.split("/") # Split l'input X/Y
 
             x = int(x)
             y = int(y)
-
+            
             return int(round((x*100)/y)) # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
 
@@ -26,7 +27,7 @@ def userfraction():
         except (ValueError, ZeroDivisionError) as e:
             print(f"{e}")
 
-        exept
+
 
 main()
 
