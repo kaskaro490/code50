@@ -25,7 +25,6 @@ def userfraction():
             # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
 
         except (ValueError, ZeroDivisionError) as e:
-            if x > y
             print(f"{e}")
 
         else:
