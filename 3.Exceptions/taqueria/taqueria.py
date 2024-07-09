@@ -16,7 +16,7 @@ def main():
     menulower = {key.lower(): value for key, value in menu.items()}
 
     Total = total(menulower, total)
-    print(Total)
+    print(f"Total: {Total}")
 
 
 def total(menulower, i): # Fonction de prise de commande
