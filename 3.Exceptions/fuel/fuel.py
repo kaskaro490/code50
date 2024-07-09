@@ -18,11 +18,12 @@ def userfraction():
             if not x > y:
                 x = int(x)
                 y = int(y)
-
+            
                 # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
                 return int(round((x*100)/y))
-            
+
+
             # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
 
         except (ValueError, ZeroDivisionError) as e:
