@@ -18,7 +18,7 @@ def userfraction():
 
             x = int(x)
             y = int(y)
-            
+
             return int(round((x*100)/y)) # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
 
@@ -27,7 +27,9 @@ def userfraction():
         except (ValueError, ZeroDivisionError) as e:
             print(f"{e}")
 
-
+        except:
+            if x > y:
+                break
 
 main()
 
