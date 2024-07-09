@@ -13,7 +13,7 @@ def userfraction():
         try:
             # demander d'entrer une fraction
             fraction = input("Fraction: ")
-            # Split l'input en X/Y
+            # Split l'input X/Y
             x, y = fraction.split("/")
             if not x > y:
                 x = int(x)
