@@ -1,9 +1,6 @@
 
 def main():
 
-
-
-
 menu = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
@@ -15,6 +12,22 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+
+
+
+
+def total() # Fonction de prise de commande
+    while True:
+        try:
+            item = input("Item: ").lower() # Ajout d'un Item
+            if item in menu
+
+
+
+        except not in menu:
+            pass
+
+
 
 
 main()
