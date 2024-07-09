@@ -17,10 +17,16 @@ def main():
         except (ValueError, ZeroDivisionError) as e:
             print(f"{e}")
 
+        except percentage > 100:
+            
         else:
-            print(f"{percentage}%")
+            if percentage == 0:
+                print("E")
+            elif percentage > 99:
+                print("F")
+            else:
+                print(f"{percentage}%")
             break
-
 
 
 main()
