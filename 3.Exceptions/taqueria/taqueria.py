@@ -22,11 +22,11 @@ def total() # Fonction de prise de commande
             total == 0
             item = input("Item: ").lower() # Ajout d'un Item
             if item in menulower:
-                total += menulower["{item]}"]
+                total += menulower["{item]}"] # ajout du prix de l'article au total de la commande
 
 
 
-        except not in menu:
+        except not in menulower:
             pass
 
 
