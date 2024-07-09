@@ -30,7 +30,7 @@ def total() # Fonction de prise de commande
             pass
 
         except EOFError:
-            print()
+            print(f"Total: {total}")
 
 
 main()
