@@ -27,9 +27,7 @@ def userfraction():
         except (ValueError, ZeroDivisionError) as e:
             print(f"{e}")
 
-        except:
-            if x > y:
-                break
-
+        except x > y:
+            break
 main()
 
