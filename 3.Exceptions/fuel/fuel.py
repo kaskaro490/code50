@@ -22,7 +22,8 @@ def userfraction():
                 # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
                 return int(round((x*100)/y))
-
+            else:
+                break
 
             # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
 
