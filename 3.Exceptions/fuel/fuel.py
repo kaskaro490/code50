@@ -5,7 +5,7 @@ def main():
         print("E")
     if percentage >= 99:
         print("F")
-    else:
+    
         print(f"{percentage}%")
 
 def userfraction():
