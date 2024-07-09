@@ -21,7 +21,9 @@ def main():
 
 def total(menulower, total): # Fonction de prise de commande
     while True:
+        total == 0
         try:
+
             item = input("Item: ").lower() # Ajout d'un Item
             if item in menulower:
                 total += menulower["{item}"] # ajout du prix de l'article au total de la commande
