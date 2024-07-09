@@ -13,8 +13,8 @@ def main():
         "Tortilla Salad": 8.00
     }
 
-menulower = {key.lower(): value for key, value in menu.items()}
-total == 0
+    menulower = {key.lower(): value for key, value in menu.items()}
+    total == 0
 
 def total(): # Fonction de prise de commande
     while True:
