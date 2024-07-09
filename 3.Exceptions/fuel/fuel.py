@@ -22,7 +22,7 @@ def main():
         else:
             break
 
-#print(f"{percentage}%")
+print(f"{percentage}%")
 
 main()
 
