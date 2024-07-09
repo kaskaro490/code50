@@ -15,12 +15,13 @@ def userfraction():
             fraction = input("Fraction: ")
             # Split l'input en X/Y
             x, y = fraction.split("/")
-            x = int(x)
-            y = int(y)
+            if not x > y:
+                x = int(x)
+                y = int(y)
 
-            # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
+                # Convertir la fraction en pourcentage arrondi à l'intégral le plus proche
 
-            return int(round((x*100)/y))
+                return int(round((x*100)/y))
 
 
             # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
