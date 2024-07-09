@@ -15,7 +15,7 @@ def main():
             # Boucler et redemander un input si l'input est supérieur à 100% ou en cas de  ZeroDivisionError et ValueError
 
         except (ValueError, ZeroDivisionError) as e:
-            print("{e}")
+            print(f"{e}")
 
         else:
             print(f"{percentage}%")
