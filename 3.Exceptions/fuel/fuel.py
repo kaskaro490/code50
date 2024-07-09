@@ -1,4 +1,14 @@
 def main():
+
+    percentage = userfraction()
+    if percentage == 0:
+        print("E")
+    elif percentage > 99:
+        print("F")
+    else:
+        print(f"{percentage}%")
+
+def userfraction():
     while True:
         try:
             # demander d'entrer une fraction
@@ -19,14 +29,8 @@ def main():
             print(f"{e}")
 
         else:
-            if percentage == 0:
-                print("E")
-            elif percentage > 99:
-                print("F")
-            else:
-                print(f"{percentage}%")
             break
-
+    return percentage
 
 main()
 
