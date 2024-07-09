@@ -27,7 +27,8 @@ def total(menulower, total): # Fonction de prise de commande
             item = input("Item: ").lower() # Ajout d'un Item
             if item in menulower:
                 total += menulower[item] # ajout du prix de l'article au total de la commande
-                print(f"Total: {total}")
+
+            print(total)
 
         except EOFError:
             return total
