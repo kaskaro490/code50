@@ -11,7 +11,7 @@ menu = {
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}.lower()
+}
 
 menulower = {}
 
