@@ -13,11 +13,11 @@ def userfraction():
         try:
 
             fraction = input("Fraction: ") # Demander d'entrer une fraction
-
             x, y = fraction.split("/") # Split l'input X/Y
 
-            x = int(x)
-            y = int(y)
+            if x <= y:
+                x = int(x)
+                y = int(y)
 
 
 
