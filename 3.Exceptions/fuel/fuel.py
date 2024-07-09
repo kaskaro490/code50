@@ -20,6 +20,7 @@ def main():
             print("error")
 
         else:
+            return percentage
             break
 
 print(f"{percentage}%")
