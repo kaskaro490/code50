@@ -15,7 +15,7 @@ def main():
 
     menulower = {key.lower(): value for key, value in menu.items()}
     total == 0
-
+    command = total()
 def total(): # Fonction de prise de commande
     while True:
         try:
