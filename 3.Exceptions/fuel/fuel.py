@@ -1,7 +1,7 @@
 def main():
 
     percentage = userfraction()
-    if percentage <= 1:
+    if  percentage <= 1:
         print("E")
     if percentage >= 99:
         print("F")
@@ -17,19 +17,14 @@ def userfraction():
 
             x = int(x)
             y = int(y)
-            if x <= y:
+            if x <= y: # Si x
                 return int(round((x*100)/y)) # Convertir et retourner la fraction en pourcentage arrondi à l'intégral le plus proche
-
-
-
 
         except (ValueError, ZeroDivisionError) as e:
             print(f"{e}")
 
         except x > y:
             pass
-
-
 
 main()
 
