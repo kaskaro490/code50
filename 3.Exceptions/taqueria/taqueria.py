@@ -15,7 +15,7 @@ def main():
 
     menulower = {key.lower(): value for key, value in menu.items()}
 
-    Total = int(total(menulower)
+    Total = int(total(menulower, total))
     print(Total)
 
 
