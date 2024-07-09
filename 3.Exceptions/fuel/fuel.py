@@ -1,9 +1,9 @@
 def main():
 
     percentage = userfraction()
-    if percentage == 0:
+    if percentage == 0 or percentage <= 1:
         print("E")
-    elif percentage > 99:
+    elif percentage >= 99:
         print("F")
     else:
         print(f"{percentage}%")
