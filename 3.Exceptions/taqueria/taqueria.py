@@ -25,12 +25,12 @@ def total(): # Fonction de prise de commande
 
 
 
-        except:
-            if not item in menulower:
-                pass
+
 
         except EOFError:
             print(f"Total: {total}")
 
-
+        except:
+            if not item in menulower:
+                pass
 main()
