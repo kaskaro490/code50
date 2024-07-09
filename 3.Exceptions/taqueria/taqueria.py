@@ -13,14 +13,16 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
-menulower = {}
+menulower = {key.lower(): value for key, value in menu.items()}
 
 
 def total() # Fonction de prise de commande
     while True:
         try:
+            total == 0
             item = input("Item: ").lower() # Ajout d'un Item
-            if item in menu
+            if item in menulower:
+                total += menulower["{item]}"]
 
 
 
