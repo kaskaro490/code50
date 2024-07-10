@@ -15,13 +15,13 @@ def main():
 
     menulower = {key.lower(): value for key, value in menu.items()}
 
-    Total = total(menulower, total)
+    Total = totalcommand(menulower, total)
     print(f"Total: {Total}")
 
 
-def total(menulower, i): # Fonction de prise de commande
+def totalcommand(menulower, total): # Fonction de prise de commande
     while True:
-        total = i
+        total = 0
         try:
 
             item = input("Item: ").lower() # Ajout d'un Item
