@@ -18,8 +18,10 @@ def main():
 def item_to_list(grocerylist, item):
     if item not in grocerylist:
         grocerylist[item] = 1
+        prin("{item} added")
     elif item in dict:
         grocerylist[item] += 1
+        prin("{item} increment")
 
 
 
