@@ -33,7 +33,7 @@ def askitem():
 
 
 
-def totalcommand(item): # Fonction de prise de commande
+def totalcommand(menulower, item): # Fonction de prise de commande
     #while True:
 
         try:
