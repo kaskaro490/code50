@@ -1,12 +1,11 @@
 def main():
 
     grocerylist = {}
-    item = None
 
     while True:
         try:
-            item_to_list(input("").upper())
-
+            item = input("").upper()
+            item_to_list()
         except EOFError:
             break
         except:
@@ -16,7 +15,7 @@ def main():
     print(grocerylist2)
 
 
-def item_to_list(grocerylist, item):
+def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
     if item not in grocerylist:
         grocerylist[item] = 1
         prin("{item} added")
