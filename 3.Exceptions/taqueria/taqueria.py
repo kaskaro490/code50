@@ -35,7 +35,7 @@ def totalcommand(menulower, total): # Fonction de prise de commande
         except:
             pass
 
-    print(f"Total: {Total}")
+    print(f"Total: {total}")
 
 
 
