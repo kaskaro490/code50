@@ -13,8 +13,8 @@ def main():
 
     sorted_grocerylist = dict(sorted(grocerylist.items()))
 
-    for key, value in sorted_grocerylist:
-        print("\n".join(f"{key}: {value}"))
+
+    print("\n".join(f"{value} {key}" for key, value in sorted_grocerylist.items()))
 
 
 def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
