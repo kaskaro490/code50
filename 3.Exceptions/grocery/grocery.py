@@ -14,7 +14,7 @@ def main():
     sorted_grocerylist = dict(sorted(grocerylist.items()))
 
     for key, value in sorted_grocerylist:
-        print(f"{key} {value}")
+        print(f"{key}: {value}")
 
 
 def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
