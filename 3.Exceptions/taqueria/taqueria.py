@@ -14,7 +14,7 @@ def main():
     }
 
 
-    #total = 0                              # Initialisation du total de la commande à 0
+    price = 0                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
     command = askitem()      #
 
