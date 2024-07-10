@@ -36,9 +36,11 @@ def askitem():
     while True:
         try:
             item = input("Item: ").lower() # Ajout d'un item
-            
+
         except EOFError:
             break
+        except:
+            pass
 
 
 
