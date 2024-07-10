@@ -11,19 +11,18 @@ def main():
         except:
             pass
 
-    print(grocerylist)
-
-    grocerylist2 = dict(sorted(grocerylist.items()))
-    print(grocerylist2)
+    sorted_grocerylist = dict(sorted(grocerylist.items()))
+    print(sorted_grocerylist)
 
 
 def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
+
     if item not in grocerylist:
         grocerylist[item] = 1
-        print(f"{item} added")
+
     elif item in grocerylist:
         grocerylist[item] += 1
-        print(f"{item} increment")
+
 
 
 
