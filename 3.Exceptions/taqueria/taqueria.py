@@ -28,7 +28,7 @@ def askitem():
 
 
 
-def totalcommand(): # Fonction de prise de commande
+def totalcommand(item): # Fonction de prise de commande
     while True:
 
         try:
