@@ -20,7 +20,7 @@ def main():
     while True:
         try:
             price = askitem(menu, price)
-            print(f"Total: ${price} ")
+            print(f"${price} ")
         except EOFError:
             break
         except:
