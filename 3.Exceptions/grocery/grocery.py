@@ -10,7 +10,10 @@ def main():
         try:
             item = input("")
             if item in list:
-                
+
+def item2list(item):
+    if not item in list:
+        list += 
 
 
 
