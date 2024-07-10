@@ -45,7 +45,7 @@ def askitem():
 
 
 def totalcommand(item): # Fonction de prise de commande
-    while True:
+    #while True:
 
         try:
             if item in menulower:
