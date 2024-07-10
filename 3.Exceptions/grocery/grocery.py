@@ -20,10 +20,10 @@ def main():
 def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
     if item not in grocerylist:
         grocerylist[item] = 1
-        print(f  "added")
+        print(f"{item} added")
     elif item in dict:
         grocerylist[item] += 1
-        print(f item " increment")
+        print(f"{item} increment")
 
 
 
