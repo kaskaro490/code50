@@ -12,7 +12,7 @@ def main():
             pass
 
     sorted_grocerylist = dict(sorted(grocerylist.items()))
-    print(sorted_grocerylist)
+    print(sorted_grocerylist.items())
 
 
 def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictionnaire
