@@ -31,12 +31,12 @@ def totalcommand(menulower, total): # Fonction de prise de commande
 
         except EOFError:
             return total
-            print(f"Total: {total}")
+
         except:
             pass
 
 
-
+    print(f"Total: ${total}")
 
 
 
