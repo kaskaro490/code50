@@ -16,7 +16,6 @@ def main():
     menulower = {key.lower(): value for key, value in menu.items()}
 
     Total = totalcommand(menulower, total)
-    print(f"Total: {Total}")
 
 
 def totalcommand(menulower, total): # Fonction de prise de commande
@@ -36,6 +35,7 @@ def totalcommand(menulower, total): # Fonction de prise de commande
         except:
             pass
 
+    print(f"Total: {Total}")
 
 
 
