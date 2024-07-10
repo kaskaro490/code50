@@ -20,6 +20,8 @@ def main():
 def askitem():
     try:
         item = input("Item: ").lower() # Ajout d'un item
+    except:
+        pass
 
 
 
