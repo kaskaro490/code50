@@ -22,10 +22,12 @@ def main():
             price += askitem(menu, price)
 
         except EOFError:
-            print(f"${price}")
+            break
         except:
             pass
+    print(f"${price}")
 
+    
 def askitem(menu, price):
         item = input("Item: ").title() # Ajout d'un item au panier
         price += menu[item]
