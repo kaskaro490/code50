@@ -1,23 +1,21 @@
 def main():
 
-    list = {
-
-
-
-    }
+    dict = {}
 
     while True:
         try:
-            item = item2list(input(""))
-            if item in list:
+            item = item_to_list(input("").upper())
+            
 
-def item2list(item):
-    if not item in list:
+# Fonction pour ajouter les item au dictionnaire
+def item_to_list(item):
+    if not item in dict:
         list[item] = 1
-    elif item in list:
+    elif item in dict:
         list[item] += 1
 
-
+# Fonction pour trier le dictionnaire par ordre alphabétique
+def sort_dict():
 
 
 
