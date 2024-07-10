@@ -17,7 +17,7 @@ def main():
 
     total = 0                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
-    command = totalcommand(askitem())      #
+    command = totalcommand(menulower, item, askitem())      #
 
 
 
