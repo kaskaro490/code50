@@ -19,17 +19,6 @@ def main():
     item = None                            # Initialisation de item sur aucun
     command = totalcommand(askitem())      #
 
-    print(f"${total}")
-
-
-
-
-
-
-
-
-
-
 
 
 def askitem():
