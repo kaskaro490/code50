@@ -16,7 +16,7 @@ def main():
 
     price = 0                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
-    command = askitem()      #
+    command = askitem(menu)      #
 
 
 
@@ -25,7 +25,7 @@ def askitem(menu):
         try:
             item = input("Item: ").title() # Ajout d'un item
             price += menu[item]
-            print()
+            print(price)
 
         except EOFError:
             break
