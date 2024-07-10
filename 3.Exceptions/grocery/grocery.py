@@ -21,7 +21,7 @@ def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictio
     if item not in grocerylist:
         grocerylist[item] = 1
         print(f"{item} added")
-    elif item in dict:
+    elif item in grocerylist:
         grocerylist[item] += 1
         print(f"{item} increment")
 
