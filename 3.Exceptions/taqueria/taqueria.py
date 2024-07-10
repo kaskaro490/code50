@@ -16,19 +16,19 @@ def main():
 
     price = 0                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
-    command = askitem(menu, price)      #
+    basket = askitem(menu, price)      #
 
-
+    print(f"${basket}")
 
 def askitem(menu, price):
     while True:
         try:
-            item = input("Item: ").title() # Ajout d'un item
+            item = input("Item: ").title() # Ajout d'un item au panier
             price += menu[item]
 
 
         except EOFError:
-            return price
+
         except:
             pass
 
