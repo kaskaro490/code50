@@ -24,6 +24,7 @@ def askitem(menu):
     while True:
         try:
             item = input("Item: ").title() # Ajout d'un item
+            print(item)
             price += menu[item]
             print(price)
 
