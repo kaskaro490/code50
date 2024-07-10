@@ -15,15 +15,28 @@ def main():
 
     menulower = {key.lower(): value for key, value in menu.items()}
 
-    total = 0
-    command = totalcommand(askitem())
+    total = 0                              # Initialisation du total de la commande à 0
+    item = None                            # Initialisation de item sur aucun
+    command = totalcommand(askitem())      #
 
     print(f"${total}")
+
+
+
+
+
+
+
+
+
+
+
 
 def askitem():
     while True:
         try:
             item = input("Item: ").lower() # Ajout d'un item
+            
         except EOFError:
             break
 
