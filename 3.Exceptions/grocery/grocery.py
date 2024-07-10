@@ -5,7 +5,8 @@ def main():
     while True:
         try:
             item = item_to_list(input("").upper())
-
+        except:
+            pass
 
 dict = dict(sorted(dict.items()))
 print(dict)
