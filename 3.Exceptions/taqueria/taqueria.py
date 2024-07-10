@@ -14,9 +14,9 @@ def main():
     }
 
     menulower = {key.lower(): value for key, value in menu.items()}
-
-    Total = totalcommand(menulower, total)
     total = 0
+    Total = totalcommand(menulower, total)
+
 
 def totalcommand(menulower, total): # Fonction de prise de commande
     while True:
@@ -31,11 +31,11 @@ def totalcommand(menulower, total): # Fonction de prise de commande
 
         except EOFError:
             return total
-
+            print(f"Total: {total}")
         except:
             pass
 
-    #print(f"Total: {total}")
+
 
 
 
