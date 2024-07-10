@@ -15,8 +15,8 @@ def main():
 
     menulower = {key.lower(): value for key, value in menu.items()}
 
-    
-    total = askitem(totalcommand(menulower, total))
+
+    total = askitem(totalcommand())
 
 
 
@@ -28,7 +28,7 @@ def askitem():
 
 
 
-def totalcommand(menulower, item): # Fonction de prise de commande
+def totalcommand(): # Fonction de prise de commande
     while True:
 
         try:
