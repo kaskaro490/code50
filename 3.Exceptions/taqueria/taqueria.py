@@ -17,6 +17,9 @@ def main():
     total = 0
     Total = totalcommand(menulower, total)
 
+    if 
+    else
+
 def askitem():
     try:
         item = input("Item: ").lower() # Ajout d'un item
@@ -35,7 +38,7 @@ def totalcommand(menulower, total): # Fonction de prise de commande
 
 
         except EOFError:
-            return print(f"Total: ${total:.2f}")
+            return total
 
         except:
             pass
