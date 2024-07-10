@@ -25,10 +25,10 @@ def askitem(menu, price):
         try:
             item = input("Item: ").title() # Ajout d'un item au panier
             price += menu[item]
-
+            return price
 
         except EOFError:
-
+            break
         except:
             pass
 
