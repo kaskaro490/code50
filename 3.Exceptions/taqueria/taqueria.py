@@ -13,42 +13,23 @@ def main():
         "Tortilla Salad": 8.00
     }
 
-    menulower = {key.lower(): value for key, value in menu.items()}
 
     total = 0                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
-    command = totalcommand(menulower, item, askitem())      #
+    command = askitem()      #
 
 
 
 def askitem():
     while True:
         try:
-            item = input("Item: ").lower() # Ajout d'un item
+            item = input("Item: ").title() # Ajout d'un item
+            print(menu[item])
 
         except EOFError:
             break
         except:
             pass
-
-
-
-def totalcommand(menulower, item): # Fonction de prise de commande
-    #while True:
-
-        try:
-            if item in menulower:
-                total += menulower[item] # ajout du prix de l'article au total de la commande
-
-
-
-        except EOFError:
-            return total
-
-        except:
-            pass
-
-
 
 
 
