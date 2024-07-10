@@ -21,10 +21,11 @@ def main():
     print(f"${total}")
 
 def askitem():
-    try:
-        item = input("Item: ").lower() # Ajout d'un item
-    except:
-        pass
+    while True:
+        try:
+            item = input("Item: ").lower() # Ajout d'un item
+        except:
+            pass
 
 
 
