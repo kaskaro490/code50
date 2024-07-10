@@ -6,8 +6,9 @@ def main():
         try:
             item = item_to_list(input("").upper())
 
-    dict = dict(sorted(dict.items().upper()))
-    
+
+dict = dict(sorted(dict.items()))
+print(dict)
 
 # Fonction pour ajouter les item au dictionnaire
 def item_to_list(item):
