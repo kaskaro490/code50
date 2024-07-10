@@ -2,14 +2,14 @@ def main():
 
     grocerylist = {}
 
-        while True:
-            try:
-                item = input("").upper()
-                item_to_list(item)
-            except EOFError:
-                break
-            except:
-                pass
+    while True:
+        try:
+            item = input("").upper()
+            item_to_list(item)
+        except EOFError:
+            break
+        except:
+            pass
 
     print(grocerylist)
 
