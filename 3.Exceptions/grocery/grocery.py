@@ -4,8 +4,8 @@ def main():
 
     while True:
         try:
-            item = input("").upper()
-            item_to_list(item)
+            item = item_to_list(input("").upper())
+
         except EOFError:
             break
         except:
