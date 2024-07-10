@@ -30,7 +30,7 @@ def totalcommand(menulower, total): # Fonction de prise de commande
 
 
         except EOFError:
-            return print(f"Total: ${float(round(total, 2))}")
+            return print(f"Total: ${total:.2f}")
 
         except:
             pass
