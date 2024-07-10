@@ -5,11 +5,14 @@ def main():
     while True:
         try:
             item = item_to_list(input("").upper())
+
+        except EOFError:
+            break
         except:
             pass
-
-dict = dict(sorted(dict.items()))
-print(dict)
+        
+    dict = dict(sorted(dict.items()))
+    print(dict)
 
 # Fonction pour ajouter les item au dictionnaire
 def item_to_list(item):
