@@ -14,8 +14,7 @@ def main():
     }
 
     menulower = {key.lower(): value for key, value in menu.items()}
-    total = 0
-    command = askitem(totalcommand(menulower, total))
+    total = askitem(totalcommand(menulower, total))
 
 
 
