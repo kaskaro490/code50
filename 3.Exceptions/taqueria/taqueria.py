@@ -19,15 +19,15 @@ def main():
 
     while True:
         try:
-            price += askitem(menu, price)
-
+            price = askitem(menu, price)
+            print(f"${price}")
         except EOFError:
             break
         except:
             pass
-    print(f"${price}")
 
-    
+
+
 def askitem(menu, price):
         item = input("Item: ").title() # Ajout d'un item au panier
         price += menu[item]
