@@ -10,7 +10,7 @@ def main():
             break
         except:
             pass
-
+    print(grocerylist)
     grocerylist2 = dict(sorted(grocerylist.items()))
     print(grocerylist2)
 
