@@ -13,12 +13,12 @@ def main():
         "Tortilla Salad": 8.00
     }
 
-
-    price = 0                              # Initialisation du total de la commande à 0
+    price = 0
+    price += askitem(menu, price)                              # Initialisation du total de la commande à 0
     item = None                            # Initialisation de item sur aucun
-    basket = askitem(menu, price)      #
+    #basket = askitem(menu, price)      #
 
-    print(f"${basket}")
+    print(f"${price}")
 
 def askitem(menu, price):
     while True:
