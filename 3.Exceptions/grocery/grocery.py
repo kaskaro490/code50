@@ -15,11 +15,11 @@ def main():
     print(grocerylist2)
 
 # Fonction pour ajouter les item au dictionnaire
-def item_to_list(item):
-    if not item in grocerylist:
-        list[item] = 1
+def item_to_list(grocerylist, item):
+    if item not in grocerylist:
+        grocerylist[item] = 1
     elif item in dict:
-        list[item] += 1
+        grocerylist[item] += 1
 
 
 
