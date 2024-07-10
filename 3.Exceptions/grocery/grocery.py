@@ -11,8 +11,8 @@ def main():
         except:
             pass
 
-    dict = dict(sorted(grocerylist.items()))
-    print(dict)
+    grocerylist = dict(sorted(grocerylist.items()))
+    print(grocerylist)
 
 # Fonction pour ajouter les item au dictionnaire
 def item_to_list(item):
