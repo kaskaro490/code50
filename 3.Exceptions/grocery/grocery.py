@@ -5,7 +5,7 @@ def main():
     while True:
         try:
             item = input("").upper()
-            item_to_list(item)
+            item_to_list(grocerylist, item)
         except EOFError:
             break
         except:
@@ -24,11 +24,6 @@ def item_to_list(grocerylist, item):  # Fonction pour ajouter les item au dictio
     elif item in dict:
         grocerylist[item] += 1
         print(f"{item} increment")
-
-
-
-
-
 
 
 
