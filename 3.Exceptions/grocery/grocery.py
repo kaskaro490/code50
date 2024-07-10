@@ -13,7 +13,8 @@ def main():
 
 def item2list(item):
     if not item in list:
-        list[item] += {}
+        list[item] = [1]
+    elif item in list
 
 
 
