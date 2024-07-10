@@ -1,6 +1,6 @@
 def main():
 
-    dict = {}
+    grocerylist = {}
 
     while True:
         try:
@@ -10,13 +10,13 @@ def main():
             break
         except:
             pass
-        
-    dict = dict(sorted(dict.items()))
+
+    dict = dict(sorted(grocerylist.items()))
     print(dict)
 
 # Fonction pour ajouter les item au dictionnaire
 def item_to_list(item):
-    if not item in dict:
+    if not item in grocerylist:
         list[item] = 1
     elif item in dict:
         list[item] += 1
