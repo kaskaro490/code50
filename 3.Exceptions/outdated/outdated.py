@@ -1,3 +1,5 @@
+import re
+
 def main():
 
     months = [
@@ -15,21 +17,33 @@ def main():
     "December"
 ]
 
+
     try:
 # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
         userdate = input("Date: ")
         if userdate.split("/")
-        
+
     except:
 
 
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
+def check_date(userdate):
+    pattern = r'^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(\d{4})$'
+    pattern2 = r'(),()
+
+    # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
+    if re.match(pattern, userdate):
+        return True
+
+    # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
+    elif
+
 
 # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
-# Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
-# Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
+
+
 # Réorganiser les parties de la date en format `YYYY-MM-DD`.
 
 # S'assurer que les mois et les jours sont formatés avec deux chiffres, en ajoutant des zéros non significatifs si nécessaire (par exemple, "9" devient "09").
