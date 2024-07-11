@@ -55,7 +55,7 @@ def check_date(userdate, months):
         month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
         day = pattern2.group(2)  # Jour
         year = pattern2.group(3)  # Année
-        print(f"{year}-{month}-{day}")
+        print(year-month-day)
         return True
 
     else:
