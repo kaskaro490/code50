@@ -27,7 +27,8 @@ def main():
             except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
-
+            else:
+                 print(f"{year}-{month}-{day}") # Réorganiser les parties de la date en format `YYYY-MM-DD`.
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
@@ -40,9 +41,8 @@ def check_date(userdate, months):
         day = pattern.group(2)  # Jour
         year = pattern.group(3)  # Année
 
-        return print(f"{year}-{month}-{day}") # Réorganiser les parties de la date en format `YYYY-MM-DD`.
+        return month, day, year
 
-    
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, months, re.IGNORECASE):
         month_word = pattern2.group(1)  # Mois en lettres
@@ -50,7 +50,7 @@ def check_date(userdate, months):
         day = pattern2.group(2)  # Jour
         year = pattern2.group(3)  # Année
 
-        return print(f"{year}-{month}-{day}") # Réorganiser les parties de la date en format `YYYY-MM-DD`.
+        return month, day, year
 
 
 
