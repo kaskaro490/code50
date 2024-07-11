@@ -34,12 +34,12 @@ def main():
 
 
             else:
-                 print(f"{year}-{month}-{day}") # Réorganiser les parties de la date en format `YYYY-MM-DD`.
+                 print(year) # Réorganiser les parties de la date en format `YYYY-MM-DD`.
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
     pattern = r'^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(\d{4})$' # S'assurer que les mois et les jours sont formatés avec deux chiffres, en ajoutant des zéros non significatifs si nécessaire (par exemple, "9" devient "09").
-    pattern2 = rf'({months}),([1-9]|[12][0-9]|3[01])/(\d{4})$'
+    pattern2 = rf'({months.title()}),([1-9]|[12][0-9]|3[01])/(\d{4})$'
 
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate, re.IGNORECASE):
