@@ -22,7 +22,7 @@ def main():
 # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
         userdate = input("Date: ")
         check_date(userdate, months)
-        
+
 
     except:
 
@@ -34,16 +34,16 @@ def check_date(userdate, months):
     pattern2 = rf'({months}),([1-9]|[12][0-9]|3[01])/(\d{4})$'
 
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
-    if re.match(pattern, userdate):
-        x = match.group(1)  # Mois
-        y = match.group(2)  # Jour
-        z = match.group(4)  # Année
+    if re.match(pattern, userdate, re.IGNORECASE):
+        x = pattern.group(1)  # Mois
+        y = pattern.group(2)  # Jour
+        z = pattern.group(4)  # Année
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
-    elif re.match(pattern2, userdate, months):
-        x = match.group(1)  # Mois
-        y = match.group(2)  # Jour
-        z = match.group(4)  # Année
+    elif re.match(pattern2, userdate, months, re.IGNORECASE):
+        x = pattern2.group(1)  # Mois
+        y = pattern2.group(2)  # Jour
+        z = pattern2.group(4)  # Année
 
 
 # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
