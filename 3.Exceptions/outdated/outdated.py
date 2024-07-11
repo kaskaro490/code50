@@ -34,11 +34,11 @@ def check_date(userdate, months):
 
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate):
-        return True
+        
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, months):
-        
+
 
 
 # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
