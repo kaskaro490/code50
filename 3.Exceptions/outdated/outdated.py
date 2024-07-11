@@ -18,7 +18,7 @@ def main():
     try:
 # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
         userdate = input("Date: ")
-        if userdate
+        if userdate.split("/") 
     except:
 
 
