@@ -23,7 +23,7 @@ def main():
         userdate = input("Date: ")
         check_date(userdate, months)
 
-        print(x)
+
     except:
 
 
@@ -38,10 +38,11 @@ def check_date(userdate, months):
         x = pattern.group(1)  # Mois
         y = pattern.group(2)  # Jour
         z = pattern.group(3)  # Année
-        
+
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, months, re.IGNORECASE):
-        x = pattern2.group(1)  # Mois
+        x = months[pattern2.group(1)]  # Mois
+
         y = pattern2.group(2)  # Jour
         z = pattern2.group(3)  # Année
 
