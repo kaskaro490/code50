@@ -46,8 +46,9 @@ def check_date(userdate, months):
         month = pattern.group(1)  # Mois
         day = pattern.group(2)  # Jour
         year = pattern.group(3)  # Année
-        print(f"{year}-{month}-{day}")
-        return True
+
+        return year, month, day
+
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, months, re.IGNORECASE):
@@ -55,8 +56,8 @@ def check_date(userdate, months):
         month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
         day = pattern2.group(2)  # Jour
         year = pattern2.group(3)  # Année
-        print(year-month-day)
-        return True
+
+        return year, month, day
 
     else:
         return False
