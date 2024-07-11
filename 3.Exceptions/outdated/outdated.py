@@ -17,6 +17,10 @@ def main():
     "December"
 ]
 
+    year = 0
+    month = 0
+    day = 0
+
     while True:
             try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
