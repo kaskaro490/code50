@@ -30,7 +30,7 @@ def main():
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
     pattern = r'^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(\d{4})$'
-    pattern2 = r'(months),()$'
+    pattern2 = r'(months),(0[1-9]|[12][0-9]|3[01])/(\d{4})$'
 
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate):
