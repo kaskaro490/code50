@@ -26,6 +26,7 @@ def main():
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
                 userdate = input("Date: ")
                 check_date(userdate, months)
+                
 
             except EOFError:
                 break
@@ -33,8 +34,7 @@ def main():
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
 
-            else:
-                 print(year) # Réorganiser les parties de la date en format `YYYY-MM-DD`.
+
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
