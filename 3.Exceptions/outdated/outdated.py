@@ -22,15 +22,15 @@ def main():
     day = 0
 
     while True:
-            try:
+        try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
                 userdate = input("Date: ")
                 check_date(userdate, months)
 
 
-            except EOFError:
+        except EOFError:
                 break
-            except:
+        except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
 
