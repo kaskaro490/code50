@@ -27,9 +27,11 @@ def main():
                 userdate = input("Date: ")
                 check_date(userdate, months)
 
-
+            except EOFError:
+                break
             except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
+
 
             else:
                  print(f"{year}-{month}-{day}") # Réorganiser les parties de la date en format `YYYY-MM-DD`.
