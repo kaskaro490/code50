@@ -35,16 +35,16 @@ def check_date(userdate, months):
 
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate, re.IGNORECASE):
-        x = pattern.group(1)  # Mois
-        y = pattern.group(2)  # Jour
-        z = pattern.group(3)  # Année
+        month = pattern.group(1)  # Mois
+        day = pattern.group(2)  # Jour
+        year = pattern.group(3)  # Année
         return x,y,z
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, months, re.IGNORECASE):
-        x = months[pattern2.group(1)]  # Mois
-
-        y = pattern2.group(2)  # Jour
-        z = pattern2.group(3)  # Année
+        month_word = months[pattern2.group(1)]  # Mois
+        month = 
+        day = pattern2.group(2)  # Jour
+        year = pattern2.group(3)  # Année
 
 
 # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
