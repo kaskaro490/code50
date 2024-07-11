@@ -17,7 +17,7 @@ def main():
 
 
 # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
-
+userdate = input("Date: ")
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 
