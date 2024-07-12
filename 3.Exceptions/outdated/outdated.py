@@ -28,8 +28,8 @@ def main():
                 print(f"{year}-{month}-{day}")
         except EOFError:
                 break
-        except:
-               print("error") # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
+        #except:
+         #      print("error") # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
 
 
