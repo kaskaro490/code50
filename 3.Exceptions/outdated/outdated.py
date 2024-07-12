@@ -38,6 +38,8 @@ def main():
 def check_date(userdate, months):
     pattern = r'^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(\d{4})$' # S'assurer que les mois et les jours sont formatés avec deux chiffres, en ajoutant des zéros non significatifs si nécessaire (par exemple, "9" devient "09").
     pattern2 = rf'({"|".join(months)}) ([1-9]|[12][0-9]|3[01]), (\d{4})$'
+
+
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate):
         match = re.match(pattern, userdate)
@@ -45,12 +47,9 @@ def check_date(userdate, months):
         day = match.group(2)  # Jour
         year = match.group(3)  # Année
 
-
-
-
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
-    elif re.match(pattern2, userdate):
-        match = re.match(pattern2, userdate)
+    elif re.match(pattern2, userdate, re.IGNORECASE):
+        match = re.match(pattern2, userdate, re.IGNORECASE)
         if match:
             print("teub")
             month_word = match.group(1)  # Mois en lettres
