@@ -17,7 +17,6 @@ def main():
     "December"
 ]
 
-   
     while True:
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
@@ -25,7 +24,7 @@ def main():
                 resultat = check_date(userdate, months)
                 if resultat:
                     year, month, day = resultat
-                    print(f"{year}-{month}-{day}")
+
 
 
         except EOFError:
