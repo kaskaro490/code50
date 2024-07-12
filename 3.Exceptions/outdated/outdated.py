@@ -51,10 +51,11 @@ def check_date(userdate, months):
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate):
         match = re.match(pattern2, userdate)
-        month_word = match.group(1)  # Mois en lettres
-        month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
-        day = match.group(2)  # Jour
-        year = match.group(3)  # Année
+        if not match == None:
+            month_word = match.group(1)  # Mois en lettres
+            month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
+            day = match.group(2)  # Jour
+            year = match.group(3)  # Année
 
     else:
          print("echec fonction")
