@@ -20,19 +20,19 @@ def main():
     while True:
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
-                userdate = input("Date: ")
-                print(f"{userdate}")
-                result = check_date(userdate, months)
-                year, month, day = result
+            userdate = input("Date: ")
+            print(f"{userdate}")
+            result = check_date(userdate, months)
+            year, month, day = result
 
-                print(f"{year}-{month}-{day}")
+
         except EOFError:
-                break
+            break
         #except:
-         #      print("error") # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
+            pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
 
-
+    print(f"{year}-{month}-{day}")
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
