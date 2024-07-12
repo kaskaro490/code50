@@ -21,10 +21,12 @@ def main():
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
                 userdate = input("Date: ")
-                resultat = check_date(userdate, months)
-                if resultat:
-                    year, month, day = resultat
+                result = check_date(userdate, months)
+                if result:
+                    year, month, day = result
                     print(f"{year}-{month}-{day}")
+                            else:
+                print("Invalid date format. Please try again.")
 
 
         except EOFError:
