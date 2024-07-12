@@ -21,6 +21,7 @@ def main():
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
                 userdate = input("Date: ").title()
+                print(userdate) = 
                 result = check_date(userdate, months)
                 year, month, day = result
 
