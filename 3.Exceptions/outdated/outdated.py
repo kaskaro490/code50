@@ -23,11 +23,6 @@ def main():
                 userdate = input("Date: ")
                 result = check_date(userdate, months)
                 year, month, day = result
-                if result:
-                    print(f"{year}-{month}-{day}")
-
-                else:
-                    print("Invalid date format. Please try again.")
 
 
         except EOFError:
@@ -35,6 +30,7 @@ def main():
         except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
+    print(f"{year}-{month}-{day}")
 
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
@@ -50,38 +46,20 @@ def check_date(userdate, months):
             day = match.group(2)  # Jour
             year = match.group(3)  # Année
 
-        return print(f"{year}-{month}-{day}")
+        return print(f"{year}-{month}-{day}") # Afficher la date au format `YYYY-MM-DD`.
 
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, re.IGNORECASE):
         match = re.match(pattern2, userdate, re.IGNORECASE)
+
         if match:
             month_word = match.group(1)  # Mois en lettres
             month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
             day = match.group(2)  # Jour
             year = match.group(3)  # Année
 
-        return print(f"{year}-{month}-{day}")
-
-    else:
-        return False
-
-
-
-
-
-
-
-
-
-
-
-# Afficher la date au format `YYYY-MM-DD`.
-
-# Utiliser des méthodes de chaînes de caractères comme `split`.
-# Utiliser des méthodes de liste comme `index`.
-# Utiliser la syntaxe de formatage des chaînes pour ajouter des zéros non significatifs.
+        return print(f"{year}-{month}-{day}") # Afficher la date au format `YYYY-MM-DD`.
 
 
 
