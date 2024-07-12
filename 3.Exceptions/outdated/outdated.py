@@ -24,13 +24,13 @@ def main():
                 result = check_date(userdate, months)
                 year, month, day = result
 
-
+                print(f"{year}-{month}-{day}")
         except EOFError:
                 break
         except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
-    print(f"{year}-{month}-{day}")
+
 
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
@@ -41,10 +41,9 @@ def check_date(userdate, months):
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate, re.IGNORECASE):
         match = re.match(pattern, userdate, re.IGNORECASE)
-        if match:
-            month = match.group(1)  # Mois
-            day = match.group(2)  # Jour
-            year = match.group(3)  # Année
+        month = match.group(1)  # Mois
+        day = match.group(2)  # Jour
+        year = match.group(3)  # Année
 
         return year, month, day
 
@@ -52,12 +51,10 @@ def check_date(userdate, months):
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
     elif re.match(pattern2, userdate, re.IGNORECASE):
         match = re.match(pattern2, userdate, re.IGNORECASE)
-
-        if match:
-            month_word = match.group(1)  # Mois en lettres
-            month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
-            day = match.group(2)  # Jour
-            year = match.group(3)  # Année
+        month_word = match.group(1)  # Mois en lettres
+        month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
+        day = match.group(2)  # Jour
+        year = match.group(3)  # Année
 
         return year, month, day
 
