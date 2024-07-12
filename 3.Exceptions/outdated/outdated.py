@@ -57,6 +57,9 @@ def check_date(userdate, months):
         day = match.group(2)  # Jour
         year = match.group(3)  # Année
 
+    else:
+         print("echec fonction")
+
     return year, month, day
 
 
