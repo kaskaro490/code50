@@ -45,7 +45,7 @@ def check_date(userdate, months):
         day = match.group(2)  # Jour
         year = match.group(3)  # Année
 
-        return year, month, day
+
 
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
@@ -56,7 +56,7 @@ def check_date(userdate, months):
         day = match.group(2)  # Jour
         year = match.group(3)  # Année
 
-        return year, month, day
+    return year, month, day
 
 
 
