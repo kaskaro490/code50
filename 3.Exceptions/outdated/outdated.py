@@ -55,7 +55,7 @@ def check_date(userdate, months):
         month_word = match.group(1)  # Mois en lettres
         month = months.index(month_word.title()) + 1  # Convertir le nom du mois en numéro
         day = match.group(2)  # Jour
-        year = match.group(3)  # Année
+        year = match.group(4)  # Année
 
     return year, month, day
 
