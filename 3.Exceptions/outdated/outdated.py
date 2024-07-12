@@ -20,7 +20,7 @@ def main():
     while True:
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
-                userdate = input("Date: ").title()
+                userdate = input("Date: ")
                 print(f"{userdate}")
                 result = check_date(userdate, months)
                 year, month, day = result
