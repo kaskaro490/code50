@@ -26,6 +26,7 @@ def main():
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
                 userdate = input("Date: ")
                 check_date(userdate, months)
+                print({year}-{month}-{day})
 
 
         except EOFError:
@@ -43,9 +44,11 @@ def check_date(userdate, months):
     print("fonction on")
     # Si la date est au format `MM/DD/YYYY`, la diviser en trois parties : mois, jour et année.
     if re.match(pattern, userdate, re.IGNORECASE):
-        month = pattern.group(1)  # Mois
-        day = pattern.group(2)  # Jour
-        year = pattern.group(3)  # Année
+        match = re.match(pattern, userdate, re.IGNORECASE)
+        if match:
+            month = match.group(1)  # Mois
+            day = match.group(2)  # Jour
+            year = match.group(3)  # Année
 
         return year, month, day
 
