@@ -20,7 +20,7 @@ def main():
     while True:
         try:
         # Demander à l'utilisateur d'entrer une date au format `MM/DD/YYYY` ou `Month DD, YYYY`.
-            userdate = input("Date: ")
+            userdate = input("Date: ").strip
             print(f"{userdate}")
             result = check_date(userdate, months)
             year, month, day = result
@@ -36,7 +36,7 @@ def main():
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
 
-    pattern = r'^(0?[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(\d{4})$' # S'assurer que les mois et les jours sont formatés avec deux chiffres, en ajoutant des zéros non significatifs si nécessaire (par exemple, "9" devient "09").
+    pattern = r'^(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/(\d{4})$' # S'assurer que les mois et les jours sont formatés avec deux chiffres, en ajoutant des zéros non significatifs si nécessaire (par exemple, "9" devient "09").
     months_pattern = "|".join(months)
     pattern2 = r'^(' + months_pattern + r') (0?[1-9]|[12][0-9]|3[01]), (\d{4})$' # {"|".join(months)} [january],[february],[march],[april]
 
