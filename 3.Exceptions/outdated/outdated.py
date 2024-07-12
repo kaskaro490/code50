@@ -25,8 +25,9 @@ def main():
                 if result:
                     year, month, day = result
                     print(f"{year}-{month}-{day}")
-                            else:
-                print("Invalid date format. Please try again.")
+                    
+                else:
+                    print("Invalid date format. Please try again.")
 
 
         except EOFError:
