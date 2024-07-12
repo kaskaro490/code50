@@ -35,7 +35,7 @@ def main():
         except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
-    print(f"{year}-{month}-{day}")
+
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
@@ -50,7 +50,7 @@ def check_date(userdate, months):
             day = match.group(2)  # Jour
             year = match.group(3)  # Année
 
-        return year, month, day
+        return print(f"{year}-{month}-{day}")
 
 
     # Si la date est au format `Month DD, YYYY`, convertir le mois en son équivalent numérique (par exemple, "January" en "01").
@@ -62,7 +62,7 @@ def check_date(userdate, months):
             day = match.group(2)  # Jour
             year = match.group(3)  # Année
 
-        return year, month, day
+        return print(f"{year}-{month}-{day}")
 
     else:
         return False
