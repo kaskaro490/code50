@@ -23,7 +23,7 @@ def main():
             userdate = input("Date: ").strip()
             result = check_date(userdate, months)
             year, month, day = result
-            print(f"{year}-{month:02}-{day:02}")
+            print(f"{year}-{int(month):02}-{int(day):02}")
             break
         except EOFError:
             break
