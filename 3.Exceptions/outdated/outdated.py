@@ -24,7 +24,7 @@ def main():
                 resultat = check_date(userdate, months)
                 if resultat:
                     year, month, day = resultat
-
+                    print(f"{year}-{month}-{day}")
 
 
         except EOFError:
@@ -32,7 +32,7 @@ def main():
         except:
                 pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
-    print(f"{year}-{month}-{day}")
+
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
