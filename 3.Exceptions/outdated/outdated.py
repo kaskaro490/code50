@@ -24,16 +24,14 @@ def main():
             print(f"{userdate}")
             result = check_date(userdate, months)
             year, month, day = result
-
-
+            print(f"{year}-{month}-{day}")
+            break
         except EOFError:
             break
-        #except:
+        except:
             pass # Si l'entrée n'est pas valide, demander de nouveau à l'utilisateur jusqu'à obtenir une date valide.
 
 
-        else:
-            print(f"{year}-{month}-{day}")
 
 # Vérifier si l'entrée de l'utilisateur correspond à l'un des deux formats de date (numérique ou textuel).
 def check_date(userdate, months):
@@ -59,7 +57,7 @@ def check_date(userdate, months):
             year = match.group(3)  # Année
 
     else:
-         print("echec fonction")
+         print("error input")
 
     return year, month, day
 
