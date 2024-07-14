@@ -11,7 +11,7 @@ def main():
             if not guess < 1:
                 if guess == num2guess:
                     print("Just right!")
-                elif guess < num2guess
+                elif guess < num2guess:
                     print("Too small!")
                 elif guess > num2guess:
                     print("Too large!")
@@ -24,9 +24,7 @@ def main():
 
 # inclusive, using the random module.
 # Prompts the user to guess that integer. If the guess is not a positive integer, the program should prompt the user again.
-# If the guess is smaller than that integer, the program should output Too small! and prompt the user again.
-# If the guess is larger than that integer, the program should output Too large! and prompt the user again.
-# If the guess is the same as that integer, the program should output Just right! and exit.
+
 
 
 
