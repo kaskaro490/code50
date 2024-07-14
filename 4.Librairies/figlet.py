@@ -15,12 +15,12 @@ def userfont():
         if 1 < len(sys.argv) < 3:
             print("len ok")
             if argvalid() is True:
-                print("sys.argv[2] is True")
+                print("argvalid() is True")
                 f = sys.argv[2]
             else:
-                sys.exit()
+                sys.exit("bad font argument")
         else:
-            f = 'slant'
+            f = "slant"
 
 def main():
 
