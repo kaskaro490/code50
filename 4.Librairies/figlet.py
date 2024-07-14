@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 import sys
-
+import random
 
 def argvalid():  # vérifier que les arguments sont valides
     fonts = Figlet().getFonts()
@@ -23,7 +23,7 @@ def userfont():
                 sys.exit("bad font argument")
 
         else:
-            font = "3x5"
+            font = random.Figlet().getFonts()
             return font
 
 def main():
