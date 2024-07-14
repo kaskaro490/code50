@@ -20,9 +20,7 @@ def main():
         # Lorsque ctrl+d est tapé, cela affiche "Adieu, adieu, to " suivi de chaque prénoms
         except EOFError:
             # Utilisation de .join() afin d'ajouter 'and' avant le dernier prénom de la liste
-            return
-
-        print(f"Adieu, adieu, to " + p.join(names))
+            return print(f"Adieu, adieu, to " + p.join(names))
 
 
 
