@@ -16,27 +16,22 @@ def argvalid():  # vérifier que les arguments sont valides
 
 
 def userfont():
-        if 1< len(sys.argv) < 4:
-            print("len ok")
+        if 1< len(sys.argv) < 4: # Vérifier que le nombre d'arguments et de 3
             if argvalid() is True:
-                print("argvalid() is True")
-                font = sys.argv[2]
+                font = sys.argv[2] # Assigner l'argument 3 à la variable font
                 return font
             else:
                 sys.exit("bad font argument")
 
         else:
-            font = random.choice(fonts)
+            font = random.choice(fonts) #
             return font
 
 def main():
 
-    #user = input('Input: ')
+    user = input('Input: ')
     f = Figlet(font=userfont())
-    print(f.renderText('text to render'))
-
-
-
+    print(f.renderText(user))
 
 
 main()
