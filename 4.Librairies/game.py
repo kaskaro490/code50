@@ -1,5 +1,6 @@
 import random
 
+
 def main():
 
 # Prompts the user for a level int . If the user does not input a positive integer, the program should prompt again.
