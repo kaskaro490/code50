@@ -30,8 +30,8 @@ def main():
 
     user = input('Input: ')
     f = userfont()
-    final = f.renderText()
-    print()
+    final = f.renderText(user)
+    print(final)
 
 
 
