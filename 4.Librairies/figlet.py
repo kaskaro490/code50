@@ -7,9 +7,9 @@ def fontchoice():  # vérifier que les arguments sont valides
     fonts = Figlet().getFonts()
     if len(sys.argv) == 3:
         if sys.argv[1] != "-f" and sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
-            sys.exit("")
+            sys.exit("bad first argument")
         elif sys.argv[2] not in fonts: # vérifier la validité de la font sys.argv[2]
-            sys.exit()
+            sys.exit("bad second argument")
         else:
             font = sys.argv[2]
             return font
@@ -19,7 +19,7 @@ def fontchoice():  # vérifier que les arguments sont valides
         return font
 
     else:
-        sys.exit()
+        sys.exit("bad arguments")
 
 def main():
 
