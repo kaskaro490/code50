@@ -16,13 +16,13 @@ def main():
             # Chaque prénom est incrémenté à une liste
             newname = input("Name: ").title().strip()
             names.append(newname)
-            adieu = p.join(names)
+
         # Lorsque ctrl+d est tapé, cela affiche "Adieu, adieu, to " suivi de chaque prénoms
         except EOFError:
             # Utilisation de .join() afin d'ajouter 'and' avant le dernier prénom de la liste
             return
 
-        print(f"dieu, adieu, to p.join(names)")
+        print(f"Adieu, adieu, to " + p.join(names))
 
 
 
