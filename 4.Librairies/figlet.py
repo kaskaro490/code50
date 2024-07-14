@@ -21,12 +21,13 @@ def userfont():
                 font = sys.argv[2] # Assigner l'argument 3 à la variable font
                 return font
             else:
-                sys.exit("bad font argument")
+                return False
 
-        else:
+        elif len(sys.argv) == 0:
             font = random.choice(fonts) #
             return font
-
+        else:
+            sys.exit("bad font argument")
 def main():
 
     if argvalid() is True:
