@@ -4,7 +4,8 @@ import sys
 def main():
     if 1 < len(sys.argv) <= 2:
 
-        if 
+        fonts = Figlet().getFonts()
+        if argv[2] not in fonts:
             f = Figlet(font = sys.argv[2])
         elif:
             f = Figlet(font = 'slant')
