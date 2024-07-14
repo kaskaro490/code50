@@ -29,6 +29,8 @@ def main():
     user = input('Input: ')
     f = userfont()
     figlet.setFont(font=f)
+    print(figlet.renderText(s))
+
     final = f.renderText(user)
     print(final)
 
