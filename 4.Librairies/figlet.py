@@ -3,7 +3,7 @@ import sys
 
 def main():
     if sys.argv[2]:
-        argfont = "sys.argv[2]"
+        argfont = sys.argv[2]
     else:
         argfont = None
 
