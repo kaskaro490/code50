@@ -16,17 +16,17 @@ def userfont():
             print("len ok")
             if argvalid() is True:
                 print("argvalid() is True")
-                f = sys.argv[2]
+                font = sys.argv[2]
             else:
                 sys.exit("bad font argument")
         else:
-            f = "slant"
-            return f
+            font = "slant"
+            return font
 
 def main():
 
     user = input('Input: ')
-    font = 
+    font =
     print(font)
     print(font.renderText(user))
 
