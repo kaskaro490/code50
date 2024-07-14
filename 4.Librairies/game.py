@@ -1,2 +1,9 @@
+import random
 
-import
+def main():
+
+    
+
+
+
+main()
