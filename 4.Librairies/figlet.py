@@ -13,8 +13,9 @@ def argvalid():  # vérifier que les arguments sont valides
 
 def userfont():
         if 1 < len(sys.argv) < 3:
-            print()
+            print("len ok")
             if argvalid() is True:
+                print("sys.argv[2] is True")
                 f = sys.argv[2]
             else:
                 sys.exit()
