@@ -21,7 +21,7 @@ def main():
         except EOFError:
             # Utilisation de .join() afin d'ajouter 'and' avant le dernier prénom de la liste
             adieu = p.join(names)
-            print(adieu)
+            print(f"dieu, adieu, to {adieu}")
 
 
 
