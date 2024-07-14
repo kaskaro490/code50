@@ -27,9 +27,9 @@ def userfont():
 def main():
 
 
+    
 
-
-    user = f.renderText(userfont(input('Input: ')))
+    user = f.renderText(input('Input: '))
     print(user)
 
 
