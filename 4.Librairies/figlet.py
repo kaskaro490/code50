@@ -1,7 +1,7 @@
 import pyfiglet
-
 def main():
 
-    print f.renderText('text to render')
+    f = pyfiglet.figlet_format(input("Input"), font="slant")
+    print(f)
 
 main()
