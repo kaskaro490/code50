@@ -8,15 +8,15 @@ fonts = Figlet().getFonts()
 
 def argvalid():  # vérifier que les arguments sont valides
     if sys.argv[2] not in fonts: # vérifier la validité de la font sys.argv[2]
-        return False
+        return sys.exit()
     elif sys.argv[1] != "-f" and sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
-        return False
+        return sys.exit()
     else:
         return True
 
 
 def userfont():
-        if 1< len(sys.argv) < 4: # Vérifier que le nombre d'arguments et de 3
+        if 1 < len(sys.argv) < 4: # Vérifier que le nombre d'arguments et de 3
             if argvalid() is True:
                 font = sys.argv[2] # Assigner l'argument 3 à la variable font
                 return font
@@ -29,9 +29,10 @@ def userfont():
 
 def main():
 
-    user = input('Input: ')
-    f = Figlet(font=userfont())
-    print(f.renderText(user))
+    if argvalid() is True:
+        user = input('Input: ')
+        f = Figlet(font=userfont())
+        print(f.renderText(user))
 
 
 main()
