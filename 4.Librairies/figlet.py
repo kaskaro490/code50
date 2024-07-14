@@ -16,29 +16,23 @@ def argvalid():  # vérifier que les arguments sont valides
         return False
 
 def userfont():
-        if sys.argv():
+        if 1 < len(sys.argv) < 3:
             if argvalid() is True:
                 f = Figlet(font = sys.argv[2])
             else:
                 sys.exit()
+        else:
+            f = Figlet(font = 'slant')
 
 def main():
 
 
 
 
-    user = f.renderText(input('Input: '))
+    user = f.renderText(userfont(input('Input: ')))
     print(user)
 
 
-
-
-
-
-        else:
-            f = Figlet(font = 'slant')
-        if
-            sys.exit()
 
 
 
