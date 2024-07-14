@@ -2,8 +2,11 @@ from pyfiglet import Figlet
 import sys
 import random
 
+
+fonts = Figlet().getFonts()
+
+
 def argvalid():  # vérifier que les arguments sont valides
-    fonts = Figlet().getFonts()
     if sys.argv[2] not in fonts: # vérifier la validité de la font sys.argv[2]
         return False
     elif sys.argv[1] != "-f" and sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
@@ -23,7 +26,7 @@ def userfont():
                 sys.exit("bad font argument")
 
         else:
-            font = random.Figlet().getFonts()
+            font = random.choice(fonts)
             return font
 
 def main():
