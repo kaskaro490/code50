@@ -13,8 +13,11 @@ def main():
 
 
 
-    if
+    if valid() is True:
         f = Figlet(font = sys.argv[2])
+
+    else:
+        sys.exit()
 
 
 
@@ -25,9 +28,7 @@ def main():
 
 
 
-    if 1 < len(sys.argv) < 2 and sys.argv[2] not in fonts:
-
-        if:
+    
 
         else:
             f = Figlet(font = 'slant')
