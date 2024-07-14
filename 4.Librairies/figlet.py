@@ -28,10 +28,10 @@ def main():
 
 
     user = input('Input: ')
-    f = userfont()
+    f = Figlet(font='slant')
     print(user)
     print(f)
-
+    print(f.renderText(user))
 
 
 
