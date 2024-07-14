@@ -8,16 +8,14 @@ def main():
             level = int(input("Level: "))
             num2guess = random.randint(1, level) # Randomly generates an integer between 1 and level
             guess = int(input("Guess: "))
+            if not guess < 1:
+                if guess == num2guess:
+                    print("Just right!")
+                elif guess < num2guess
+                    print("Too small!")
+                elif guess > num2guess:
+                    print("Too large!")
 
-            if guess == num2guess:
-                print("Just right!")
-            elif guess < num2guess
-                print("Too small!")
-            elif guess > num2guess:
-                print("Too large!")
-
-        except guess < 1:
-            pass
         except ValueError:
             pass
 
