@@ -1,8 +1,8 @@
 import emoji
 
 def main():
-    user = input('Input: ', language='alias')
-    print(emoji.emojize(f'Output: {user}'))
+    user = input('Input: ')
+    print(emoji.emojize(f'Output: {user}', language='alias'))
 
 
 main()
