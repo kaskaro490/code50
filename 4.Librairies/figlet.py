@@ -1,13 +1,13 @@
-import pyfiglet
+from pyfiglet import Figlet
 import sys
 
 def main():
     if len(sys.argv) > 1:
-        argfont = sys.argv[2]
+        f = Figlet(font = sys.argv[2])
     else:
-        argfont = ""
+        f = Figlet(font = 'slant')
 
-    f = pyfiglet.figlet_format(input("Input: "), font=argfont)
-    print(f)
+    user = f.renderText(input('Input: '))
+    print(user)
 
 main()
