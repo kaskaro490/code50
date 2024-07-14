@@ -25,8 +25,8 @@ def userfont():
 
 def main():
 
-    user = userfont(input('Input: '))
-    font = Figlet()
+    user = input('Input: ')
+    font = 
     print(font)
     print(font.renderText(user))
 
