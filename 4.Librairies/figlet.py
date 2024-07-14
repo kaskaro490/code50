@@ -21,12 +21,8 @@ def main():
 
     if argvalid() is True:
         f = Figlet(font = sys.argv[2])
-
     else:
         sys.exit()
-
-
-
 
     user = f.renderText(input('Input: '))
     print(user)
