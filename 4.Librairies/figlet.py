@@ -17,7 +17,7 @@ def userfont():
             print("len ok")
             if argvalid() is True:
                 print("argvalid() is True")
-                font = str(sys.argv[2])
+                font = sys.argv[2]
             else:
                 sys.exit("bad font argument")
         else:
