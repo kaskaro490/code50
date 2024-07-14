@@ -18,7 +18,7 @@ def main():
 
         except guess < 1:
             pass
-        except guess != int:
+        except ValueError:
             pass
 
 
