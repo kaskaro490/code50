@@ -18,11 +18,11 @@ def argvalid():  # vérifier que les arguments sont valides
 def userfont():
         if 1 < len(sys.argv) < 3:
             if argvalid() is True:
-                f = Figlet(font = sys.argv[2])
+                f = sys.argv[2]
             else:
                 sys.exit()
         else:
-            f = Figlet(font = 'slant')
+            f = 'slant'
 
 def main():
 
