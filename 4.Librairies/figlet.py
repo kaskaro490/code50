@@ -21,6 +21,7 @@ def userfont():
                 sys.exit("bad font argument")
         else:
             f = "slant"
+            return f
 
 def main():
 
@@ -28,8 +29,8 @@ def main():
 
     user = input('Input: ')
     f = userfont()
-
-    print(Figlet.renderText(user, f))
+    print(user)
+    print(f)
 
 
 
