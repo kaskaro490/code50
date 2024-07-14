@@ -6,8 +6,8 @@ def argvalid():  # vérifier que les arguments sont valides
     fonts = Figlet().getFonts()
     if sys.argv[2] not in fonts: # vérifier la validité de la font sys.argv[2]
         return False
-    elif sys.argv[1] != "-f" or sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
-        return False
+    #if sys.argv[1] != "-f" and sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
+       # return False
     else:
         return True
 
