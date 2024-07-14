@@ -13,13 +13,15 @@ def argvalid():  # vérifier que les arguments sont valides
 
 
 def userfont():
-        if len(sys.argv) == 3:
+        if 1< len(sys.argv) < 4:
             print("len ok")
             if argvalid() is True:
                 print("argvalid() is True")
                 font = sys.argv[2]
+                return font
             else:
                 sys.exit("bad font argument")
+
         else:
             font = "3x5"
             return font
