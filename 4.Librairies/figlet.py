@@ -28,9 +28,10 @@ def main():
 
 
 
-    
-    user = f.renderText(input('Input: '))
-    print(user)
+    user = input('Input: ')
+    f = userfont()
+    final = f.renderText()
+    print()
 
 
 
