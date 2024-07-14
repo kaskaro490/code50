@@ -2,7 +2,7 @@ import inflect
 
 p = inflect.engine()
 
-prénoms = []
+names = []
 
 
 
@@ -10,14 +10,16 @@ prénoms = []
 def main():
 
 
-    # une boucle infinie qui demande à user d'écrire des prenoms
+    # Une boucle infinie qui demande à user d'écrire des prenoms
     while True:
         try:
             # Chaque prénom est incrémenté à une liste
+            newname = input("Name: ")
+            names += newname
 
-
-        #Lorsque ctrl+d est tapé, cela affiche
+        # Lorsque ctrl+d est tapé, cela affiche "Adieu, adieu, to " suivi de chaque prénoms
         except EOFError:
+            # Utilisation de .join() afin d'ajouter 'and' avant le dernier prénom de la liste
 
 
 
