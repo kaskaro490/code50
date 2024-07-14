@@ -1,6 +1,13 @@
 from pyfiglet import Figlet
 import sys
 
+
+def valid():  # vérifier que les arguments sont valides
+    if 1 < len(sys.argv) < 3 and sys.argv[2] is in fonts:
+            return True
+    else:
+         return False
+
 def main():
     fonts = Figlet().getFonts()
 
@@ -9,8 +16,7 @@ def main():
         # vérifier la longueur des arguments
         # vérifier que sys.argv[2] est une font valide
 
-def valid():  # vérifier que les arguments sont valides
-    if 
+
 
 
 
