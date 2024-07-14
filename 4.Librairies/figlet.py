@@ -2,11 +2,12 @@ import pyfiglet
 import sys
 
 def main():
-    if sys.argv[2] is True:
-        font = sys.argv[2]
+    if sys.argv[2]:
+        argfont = sys.argv[2]
+    else:
+        argfont = None
 
-    else
-    f = pyfiglet.figlet_format(input("Input: "), font=)
+    f = pyfiglet.figlet_format(input("Input: "), font=argfont)
     print(f)
 
 main()
