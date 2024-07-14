@@ -2,7 +2,7 @@ from pyfiglet import Figlet
 import sys
 
 def main():
-    if len(sys.argv) > 1:
+    if 1 < len(sys.argv) <= 2:
         f = Figlet(font = sys.argv[2])
     elif:
         f = Figlet(font = 'slant')
