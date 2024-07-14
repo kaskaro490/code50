@@ -7,9 +7,9 @@ def main():
     if 1 < len(sys.argv) <= 2:
         if sys.argv[2] not in fonts:
             sys.exit()
-        else:
+        if:
             f = Figlet(font = sys.argv[2])
-    elif:
+        else:
             f = Figlet(font = 'slant')
 
     user = f.renderText(input('Input: '))
