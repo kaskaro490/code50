@@ -14,7 +14,7 @@ def main():
     while True:
         try:
             # Chaque prénom est incrémenté à une liste
-            newname = input("Name: ").title().strip()
+            newname = input("").title().strip()
             names.append(newname)
 
         # Lorsque ctrl+d est tapé, cela affiche "Adieu, adieu, to " suivi de chaque prénoms
