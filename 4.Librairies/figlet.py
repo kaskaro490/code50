@@ -3,14 +3,11 @@ import sys
 import random
 
 
-
-
-
 def fontchoice():  # vérifier que les arguments sont valides
     fonts = Figlet().getFonts()
     if len(sys.argv) == 3:
         if sys.argv[1] != "-f" and sys.argv[1] != "--font": # vérifier la validité de sys.argv[1] qui doit être -f ou --font
-            sys.exit()
+            sys.exit("")
         elif sys.argv[2] not in fonts: # vérifier la validité de la font sys.argv[2]
             sys.exit()
         else:
@@ -28,7 +25,8 @@ def main():
 
     font = fontchoice()
     user = input('Input: ')
-    print(font.renderText(user))
+    f = Figlet(font)
+    print(f.renderText(user))
 
 
 main()
