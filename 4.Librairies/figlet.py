@@ -8,7 +8,10 @@ def argvalid():  # vérifier que les arguments sont valides
 
         if sys.argv[2] not in fonts: # vérifier la longueur des arguments et la validité de la font sys.argv[2]
             return False
-        elif sys.argv[1]
+        elif sys.argv[1] != "-f":
+            return False
+        else:
+            return True
     else:
         return False
 
