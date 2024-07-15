@@ -11,10 +11,12 @@ def main():
             if not levelselect is False: # Vérifier la validité du niveau demandé.
                 x = generate_integer(levelselect)
                 y = generate_integer(levelselect)
-                answer = input(f"{x}+{y}= ")
+                answer = int(input(f"{x}+{y}= "))
 
                 if answer == (x + y):
                     print("ok")
+                else:
+                    print("EEE")
 
         except EOFError:
             break
