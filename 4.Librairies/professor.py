@@ -9,6 +9,8 @@ def main():
             if not get_level() is False: # Vérifier la validité du niveau demandé.
 
                 answer = input(f"{x}+{y}= ")
+                generate_integer(level)
+                if answer == (x + y):
 
         except:
             pass
@@ -35,7 +37,7 @@ def generate_integer(level): # Retourner un entier non négatif généré aléat
     if level == 1:
         x = random.randint(0,9)
         y = random.randint(0,9)
-
+        return x, y
 
 
 
