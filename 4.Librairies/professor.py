@@ -27,15 +27,14 @@ def main():
                 else:
                     print(f"Score: {good_answers}")
                     break
-            else:
-                pass
+
+
         except ValueError:
             pass
-
         except EOFError:
             break
-
-
+        except:
+            pass
 
 
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
