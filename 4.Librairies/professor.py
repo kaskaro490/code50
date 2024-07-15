@@ -28,7 +28,7 @@ def main():
                     print(f"Score: {good_answers}")
                     break
             else:
-                break
+                pass
         except ValueError:
             pass
 
