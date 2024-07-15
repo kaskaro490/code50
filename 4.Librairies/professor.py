@@ -12,7 +12,7 @@ def main():
 
 
 
-        except:
+        except ValueError:
             pass
 
 
@@ -22,7 +22,7 @@ def main():
         return True
     elif level < 1:
         return False
-    elif 
+    elif
 
 
 
