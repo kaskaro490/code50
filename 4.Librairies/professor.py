@@ -22,6 +22,7 @@ def main():
                                 good_answers += 1
 
                             else:
+                                try +=
                                 wrong_answers += 1
 
                         else:
