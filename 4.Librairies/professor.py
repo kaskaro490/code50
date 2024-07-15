@@ -25,8 +25,7 @@ def main():
 
                     else:
                         wrong_answers += 1
-                    print(f"Score: {good_answers}")
-
+                    
                 else:
                     print(f"Score: {good_answers}")
                     break
