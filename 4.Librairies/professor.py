@@ -14,7 +14,7 @@ def main():
                     if not levelselect is False: # Vérifier la validité du niveau demandé.
                         good_answers = 0
                         wrong_answers = 0
-                        if not (good_answers + wrong_answers) == 10:
+                        if not good_answers + wrong_answers == 10:
                             x = generate_integer(levelselect)
                             y = generate_integer(levelselect)
                             answer = int(input(f"{x}+{y}= "))
