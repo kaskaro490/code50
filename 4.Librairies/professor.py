@@ -28,8 +28,6 @@ def main():
                 else:
                     print(f"Score: {good_answers}")
                     break
-            else:
-                raise ValueError
 
         except ValueError:
             pass
