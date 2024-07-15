@@ -7,7 +7,8 @@ def main():
             level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
             if not get_level(level) is False: # Vérifier la validité du niveau demandé.
-
+                x = int(x)
+                y = int(y)
                 answer = input(f"{x}+{y}= ")
                 generate_integer(level)
                 if answer == (x + y):
@@ -15,7 +16,7 @@ def main():
 
         except EOFError:
             pass
-            
+
 
     # except ValueError:
            # pass
