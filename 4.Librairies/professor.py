@@ -11,16 +11,13 @@ def main():
             if not levelselect is False: # Vérifier la validité du niveau demandé.
                 x = generate_integer(levelselect)
                 y = generate_integer(levelselect)
-                print(x)
-                print(y)
-
                 answer = input(f"{x}+{y}= ")
 
                 if answer == (x + y):
                     print("ok")
 
         except EOFError:
-            pass
+            break
 
 
     # except ValueError:
@@ -36,7 +33,7 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
     userinput = int(input(l))
 
     if 0 < userinput < 4:
-        return l
+        return True
     else:
         return False
 
