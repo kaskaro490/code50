@@ -12,7 +12,7 @@ def main():
             if not levelselect is False: # Vérifier la validité du niveau demandé.
 
 
-                    
+
                     try:
                         if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
                             x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
