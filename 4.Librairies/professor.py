@@ -26,7 +26,8 @@ def main():
                                 print("incr wrong")
 
                         else:
-                            print(f"{}/")
+                            print(f"Score: {good_answers}")
+                            break
                 except ValueError:
                     print("EEE")
                     pass
