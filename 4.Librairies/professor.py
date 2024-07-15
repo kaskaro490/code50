@@ -23,10 +23,11 @@ def main():
                                 good_answers += 1
                             else:
                                 wrong_answers += 1
-                                print("EEE")
+
                         else:
                             print(f"")
-                except:
+                except ValueError:
+                    print("EEE")
                     pass
 
         except EOFError:
