@@ -10,13 +10,19 @@ def main():
             # Envoyer le niveau à la fonction generate_integer(level).
 
 
-            
+
 
         except:
             pass
 
 
  def get_level(): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
+
+    if 0 < level < 4:
+        return True
+    elif level < 1:
+        return False
+    elif 
 
 
 
