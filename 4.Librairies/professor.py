@@ -4,7 +4,7 @@ import random
 def main():
     while True:
         try:
-            level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau
+            level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
             if not get_level() is False: # Vérifier la validité du niveau demandé.
 
@@ -18,7 +18,7 @@ def main():
            # pass
 
 
- def get_level(l): 
+ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
 
     userinput = int(input(l))
 
