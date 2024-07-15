@@ -20,8 +20,10 @@ def main():
                         if not good_answers == wrong_answers:
                             if answer == (x + y):
                                 good_answers += 1
+                                print("incr good")
                             else:
                                 wrong_answers += 1
+                                print("incr wrong")
 
                         else:
                             print(f"")
