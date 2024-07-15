@@ -4,6 +4,7 @@ x = 0
 y = 0
 
 good_answers = 0
+wrong_answers = 0
 
 def main():
     while True:
@@ -17,10 +18,14 @@ def main():
                         y = generate_integer(levelselect)
                         answer = int(input(f"{x}+{y}= "))
 
-                        if answer == (x + y):
-                            good_answers += 1
+                        if not good_answers == wrong_answers:
+                            if answer == (x + y):
+                                good_answers += 1
+                            else:
+                                wrong_answers += 1
+                                print("EEE")
                         else:
-                            print("EEE")
+                            print(f"")
                 except:
                     pass
 
