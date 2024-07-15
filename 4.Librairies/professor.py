@@ -11,9 +11,10 @@ def main():
 
             while True:
                 try:
+                    good_answers = 0
+                    wrong_answers = 0
                     if not levelselect is False: # Vérifier la validité du niveau demandé.
-                        good_answers = 0
-                        wrong_answers = 0
+
                         if good_answers + wrong_answers != 10:
                             x = generate_integer(levelselect)
                             y = generate_integer(levelselect)
@@ -24,7 +25,7 @@ def main():
 
                             else:
                                 wrong_answers += 1
-                                
+                            print(f"Score: {good_answers}")
 
                         else:
                             print(f"Score: {good_answers}")
