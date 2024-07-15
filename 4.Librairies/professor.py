@@ -3,9 +3,9 @@ import random
 
 def main():
     while True:
-        
-
+        try:
             level = int(input("Level: "))
+            
 
 
 def get_level(): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
