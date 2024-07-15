@@ -31,7 +31,8 @@ def main():
             except ValueError:
                 pass
 
-
+        except ValueError:
+            pass
         except EOFError:
             break
         except:
