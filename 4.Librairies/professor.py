@@ -9,27 +9,29 @@ def main():
     wrong_answers = 0
 
     while True:
-        levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
         try:
+            levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
-            if not levelselect is False: # Vérifier la validité du niveau demandé.
-                if good_answers + wrong_answers != 10:
-                    x = generate_integer(levelselect)
-                    y = generate_integer(levelselect)
-                    answer = int(input(f"{x}+{y}= "))
+            try:
+                if not levelselect is False: # Vérifier la validité du niveau demandé.
+                    if good_answers + wrong_answers != 10:
+                        x = generate_integer(levelselect)
+                        y = generate_integer(levelselect)
+                        answer = int(input(f"{x}+{y}= "))
 
-                    if answer == (x + y):
-                        good_answers += 1
+                        if answer == (x + y):
+                            good_answers += 1
+
+                        else:
+                            wrong_answers += 1
 
                     else:
-                        wrong_answers += 1
+                        print(f"Score: {good_answers}")
+                        break
+            except ValueError:
+                pass
 
-                else:
-                    print(f"Score: {good_answers}")
-                    break
 
-        except ValueError:
-            pass
         except EOFError:
             break
         except:
