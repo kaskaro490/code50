@@ -2,7 +2,8 @@ import random
 
 x = 0
 y = 0
-
+good_answers = 0
+wrong_answers = 0
 
 def main():
 
@@ -10,11 +11,8 @@ def main():
 
     while True:
         try:
-
-
             if not levelselect is False: # Vérifier la validité du niveau demandé.
-                good_answers = 0
-                wrong_answers = 0
+
                 if good_answers + wrong_answers != 10:
                     x = generate_integer(levelselect)
                     y = generate_integer(levelselect)
