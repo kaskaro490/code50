@@ -30,11 +30,6 @@ def main():
 
                                 except:
                                     pass
-
-
-
-
-
                         else:
                             print(f"Score: {good_answers}")
                             break
