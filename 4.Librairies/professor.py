@@ -16,13 +16,20 @@ def main():
                         if good_answers + wrong_answers != 10:
                             x = generate_integer(levelselect)
                             y = generate_integer(levelselect)
-                            answer = int(input(f"{x}+{y}= "))
+
+                            if attempts < 4:
+                                while True:
+                                    try:
+                                        answer = int(input(f"{x}+{y}= "))
+                                        attempts += 1
+                                    except:
+                                        pass
 
                             if answer == (x + y):
                                 good_answers += 1
 
-                            elif attempts < 4:
-                                attempts += 1
+                            elif
+
 
                             else:
                                 wrong_answers += 1
