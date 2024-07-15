@@ -25,7 +25,7 @@ def main():
 
     # except ValueError:
            # pass
-def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+def generate_integer(l, x): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
     if l == 1:
         x = random.randint(0,9)
