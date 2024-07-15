@@ -4,15 +4,13 @@ import random
 def main():
     while True:
         try:
-            level = int(input("Level: ")) # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3).
+            level = int(input("Level: ")) # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
             if get_level(level) is True:  # Vérifier la validité du niveau demandé.
             # Envoyer le niveau à la fonction generate_integer(level).
 
 
-            else:
-                if get_level(level) is False:
-                    break
+            
 
         except:
             pass
@@ -24,6 +22,11 @@ def main():
 
 #def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
+    if
+    elif
+    elif
+    else
+
 
 
 if __name__ == "__main__":
@@ -32,9 +35,7 @@ if __name__ == "__main__":
 
 
 
-# 1. **Demander le niveau à l'utilisateur** :
-#    - Le programme doit demander à l'utilisateur de saisir un niveau (1, 2 ou 3).
-#    - Si l'entrée n'est pas 1, 2 ou 3, demander à nouveau jusqu'à ce qu'une entrée valide soit reçue.
+
 
 # 2. **Générer des problèmes de mathématiques** :
 #    - Générer aléatoirement 10 problèmes mathématiques.
@@ -51,8 +52,3 @@ if __name__ == "__main__":
 #    - Garder une trace du nombre de réponses correctes.
 #    - À la fin, afficher le score de l'utilisateur sur 10.
 
-# 5. **Structure des fonctions** :
-#    - Implémenter `get_level` pour demander et valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
-#    - Implémenter `generate_integer` pour retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
-
-# Cette structure garantit que le programme est interactif et éducatif, similaire au jouet original "Little Professor".
