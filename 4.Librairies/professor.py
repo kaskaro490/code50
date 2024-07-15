@@ -6,14 +6,16 @@ def main():
         try:
             level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
-            if level == 1:  # Vérifier la validité du niveau demandé.
-            # Envoyer le niveau à la fonction generate_integer(level).
+            if not get_level() is False:
 
-            elif level == 2:
+                if level == 1:  # Vérifier la validité du niveau demandé.
+                # Envoyer le niveau à la fonction generate_integer(level).
 
-            elif level == 3:
+                elif level == 2:
 
-            
+                elif level == 3:
+
+
 
 
 
@@ -28,9 +30,9 @@ def main():
 
     if 0 < userinput < 4:
         return userinput
-    elif userinput < 1:
+    else:
         return False
-    elif
+
 
 
 
