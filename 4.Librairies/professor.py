@@ -12,12 +12,13 @@ def main():
             while True:
                 try:
                     if not levelselect is False: # Vérifier la validité du niveau demandé.
-                        x = generate_integer(levelselect)
-                        y = generate_integer(levelselect)
-                        answer = int(input(f"{x}+{y}= "))
                         good_answers = 0
                         wrong_answers = 0
                         if not (good_answers + wrong_answers) == 10:
+                            x = generate_integer(levelselect)
+                            y = generate_integer(levelselect)
+                            answer = int(input(f"{x}+{y}= "))
+
                             if answer == (x + y):
                                 good_answers += 1
                                 print("incr good")
