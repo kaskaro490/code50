@@ -29,9 +29,10 @@ def main():
                     break
             else:
                 if levelselect is False:
-                    return 
+                    raise ValueError
 
-
+        except ValueError:
+            pass
 
         except:
             pass
