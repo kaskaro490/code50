@@ -10,14 +10,16 @@ def main():
 
                 if level == 1:  # Vérifier la validité du niveau demandé.
                 # Envoyer le niveau à la fonction generate_integer(level).
-
+                
                 #elif level == 2:
 
                 #elif level == 3:
-
-            
-        except ValueError:
+        except:
             pass
+
+
+    # except ValueError:
+           # pass
 
 
  def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
