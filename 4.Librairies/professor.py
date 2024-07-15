@@ -5,11 +5,11 @@ def main():
     ...
 
 
-def get_level():
+def get_level(): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
     ...
 
 
-def generate_integer(level):
+def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
     ...
 
 
