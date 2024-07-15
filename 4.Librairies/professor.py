@@ -25,11 +25,11 @@ def main():
 
     # except ValueError:
            # pass
-def generate_integer(l, x): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
     if l == 1:
-        x = random.randint(0,9)
-        return x
+        result = random.randint(0,9)
+        return result
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
 
