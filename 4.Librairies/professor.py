@@ -26,7 +26,7 @@ def main():
                                         good_answers += 1
                                         attempts = 0
                                         break
-                                    else:
+                                    elif attempts:
                                         wrong_answers += 1
 
                                 except:
