@@ -16,7 +16,7 @@ def main():
                         if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
                             x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
                             y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
-                            while attempts < 4:
+                            while attempts < 4: # Nombre de tentatives entre 1 et 3
                                 try:
                                     answer = int(input(f"{x}+{y}= "))
                                     attempts += 1
