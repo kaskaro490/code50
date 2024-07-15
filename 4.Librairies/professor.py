@@ -25,7 +25,7 @@ def main():
 
                     else:
                         wrong_answers += 1
-                    
+
                 else:
                     print(f"Score: {good_answers}")
                     break
@@ -53,6 +53,7 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
         return True
     else:
         return False
+
 
 if __name__ == "__main__":
     main()
