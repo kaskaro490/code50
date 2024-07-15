@@ -3,25 +3,26 @@ import random
 x = 0
 y = 0
 
-
+good_answers = 0
 
 def main():
     while True:
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
-            try:
-                if not levelselect is False: # Vérifier la validité du niveau demandé.
-                    x = generate_integer(levelselect)
-                    y = generate_integer(levelselect)
-                    answer = int(input(f"{x}+{y}= "))
+            while True:
+                try:
+                    if not levelselect is False: # Vérifier la validité du niveau demandé.
+                        x = generate_integer(levelselect)
+                        y = generate_integer(levelselect)
+                        answer = int(input(f"{x}+{y}= "))
 
-                    if answer == (x + y):
-                        print("ok")
-                    else:
-                        print("EEE")
-            except:
-                pass
+                        if answer == (x + y):
+                            good_answers += 1
+                        else:
+                            print("EEE")
+                except:
+                    pass
 
         except EOFError:
             break
