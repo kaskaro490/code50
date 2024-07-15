@@ -10,7 +10,7 @@ def main():
 
                 if level == 1:  # Vérifier la validité du niveau demandé.
                 # Envoyer le niveau à la fonction generate_integer(level).
-                
+
                 #elif level == 2:
 
                 #elif level == 3:
@@ -34,7 +34,7 @@ def main():
 
 
 
-#def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
     if
     elif
