@@ -26,8 +26,10 @@ def main():
                                         good_answers += 1
                                         attempts = 0
                                         break
-                                    elif attempts:
+                                    elif attempts == 3:
                                         wrong_answers += 1
+                                        print(x+y)
+                                        break
 
                                 except:
                                     pass
