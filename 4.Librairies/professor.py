@@ -23,6 +23,8 @@ def main():
                                     attempts += 1
                                     if answer == (x + y):
                                         good_answers += 1
+                                        attempts = 0
+                                        break
                                     else:
                                         wrong_answers += 1
 
@@ -32,7 +34,7 @@ def main():
 
 
 
-                           
+
                         else:
                             print(f"Score: {good_answers}")
                             break
