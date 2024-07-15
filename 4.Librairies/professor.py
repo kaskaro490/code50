@@ -7,9 +7,9 @@ def main():
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
             if not levelselect is False: # Vérifier la validité du niveau demandé.
-                values = generate_integer(levelselect)
-                x = int(x)
-                y = int(y)
+                generate_integer(levelselect)
+                print
+
                 answer = input(f"{x}+{y}= ")
 
                 if answer == (x + y):
@@ -21,9 +21,9 @@ def main():
 
     # except ValueError:
            # pass
-def generate_integer(levelselect): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
-    if levelselect == 1:
+    if l == 1:
         x = random.randint(0,9)
         y = random.randint(0,9)
         return x, y
