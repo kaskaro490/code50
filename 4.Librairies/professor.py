@@ -11,6 +11,7 @@ def main():
                 answer = input(f"{x}+{y}= ")
                 generate_integer(level)
                 if answer == (x + y):
+                    print("ok")
 
         except:
             pass
