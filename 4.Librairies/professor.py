@@ -11,6 +11,7 @@ def main():
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
             if not levelselect is False: # Vérifier la validité du niveau demandé.
+                print("level ok")
                 while True:
                     try:
                         if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
