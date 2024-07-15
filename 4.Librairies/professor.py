@@ -7,7 +7,7 @@ def main():
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
 
             if not levelselect is False: # Vérifier la validité du niveau demandé.
-                generate_integer(levelselect)
+                values = generate_integer(levelselect)
                 x = int(x)
                 y = int(y)
                 answer = input(f"{x}+{y}= ")
