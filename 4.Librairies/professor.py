@@ -8,11 +8,8 @@ def main():
 
             if not get_level() is False: # Vérifier la validité du niveau demandé.
 
-                    # Envoyer le niveau à la fonction generate_integer(level).
 
-                #elif level == 2:
 
-                #elif level == 3:
         except:
             pass
 
@@ -35,7 +32,10 @@ def main():
 
 def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
-    if
+    if level == 1:
+        x = random.randint(0,9)
+        y = random.randint(0,9)
+
     elif
     elif
     else
