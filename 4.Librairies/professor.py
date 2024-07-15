@@ -5,12 +5,11 @@ def main():
     while True:
         try:
             level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
-
+            
             if not get_level(level) is False: # Vérifier la validité du niveau demandé.
-                x = int(x)
-                y = int(y)
-                answer = input(f"{x}+{y}= ")
                 generate_integer(level)
+                answer = input(f"{x}+{y}= ")
+
                 if answer == (x + y):
                     print("ok")
 
