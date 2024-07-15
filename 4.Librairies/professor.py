@@ -1,5 +1,7 @@
 import random
 
+x = 0
+y = 0
 
 def main():
     while True:
@@ -8,7 +10,8 @@ def main():
 
             if not levelselect is False: # Vérifier la validité du niveau demandé.
                 generate_integer(levelselect)
-                print
+                print(x)
+                print(y)
 
                 answer = input(f"{x}+{y}= ")
 
