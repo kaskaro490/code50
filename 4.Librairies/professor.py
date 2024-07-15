@@ -2,7 +2,7 @@ import random
 
 x = 0
 y = 0
-
+attempts = 0
 
 def main():
     good_answers = 0
@@ -21,8 +21,10 @@ def main():
                             if answer == (x + y):
                                 good_answers += 1
 
+                            elif attempts < 4:
+                                attempts += 1
+
                             else:
-                                try +=
                                 wrong_answers += 1
 
                         else:
