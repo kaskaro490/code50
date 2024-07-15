@@ -29,7 +29,7 @@ def generate_integer(l): # Retourner un entier non négatif généré aléatoire
 
     if l == 1:
         result = random.randint(0,9)
-        return result
+        return int(result)
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
 
