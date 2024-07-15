@@ -17,7 +17,7 @@ def main():
                         answer = int(input(f"{x}+{y}= "))
                         good_answers = 0
                         wrong_answers = 0
-                        if not good_answers == wrong_answers:
+                        if not (good_answers + wrong_answers) == 10:
                             if answer == (x + y):
                                 good_answers += 1
                                 print("incr good")
@@ -26,7 +26,7 @@ def main():
                                 print("incr wrong")
 
                         else:
-                            print(f"")
+                            print(f"{}/")
                 except ValueError:
                     print("EEE")
                     pass
