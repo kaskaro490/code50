@@ -32,6 +32,8 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
 
     if not 0 < userinput < 4:
         return False
+    else:
+        return True
 
 if __name__ == "__main__":
     main()
