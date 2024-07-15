@@ -4,10 +4,10 @@ import random
 def main():
     while True:
         try:
-            level = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
-            
-            if not get_level(level) is False: # Vérifier la validité du niveau demandé.
-                generate_integer(level)
+            levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
+
+            if not get_level(levelselect) is False: # Vérifier la validité du niveau demandé.
+                generate_integer(levelselect)
                 answer = input(f"{x}+{y}= ")
 
                 if answer == (x + y):
@@ -19,29 +19,21 @@ def main():
 
     # except ValueError:
            # pass
+def generate_integer(levelselect): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
-
+    if levelselect == 1:
+        x = random.randint(0,9)
+        y = random.randint(0,9)
+        return x, y
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
 
     userinput = int(input(l))
 
     if 0 < userinput < 4:
-        return userinput
+        return True
     else:
         return False
-
-
-
-
-def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
-
-    if level == 1:
-        x = random.randint(0,9)
-        y = random.randint(0,9)
-        return x, y
-
-
 
 if __name__ == "__main__":
     main()
