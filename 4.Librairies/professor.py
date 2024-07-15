@@ -9,12 +9,12 @@ def main():
             pass
 
 
-def get_level(): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
-    ...
+ #def get_level(): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
+    
 
 
-def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
-    ...
+#def generate_integer(level): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+
 
 
 if __name__ == "__main__":
