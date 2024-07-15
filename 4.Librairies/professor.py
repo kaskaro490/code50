@@ -5,8 +5,6 @@ y = 0
 
 
 def main():
-
-
     good_answers = 0
     wrong_answers = 0
 
