@@ -20,17 +20,19 @@ def main():
                                 try:
                                     answer = int(input(f"{x}+{y}= "))
                                     attempts += 1
+                                    if answer == (x + y):
+                                        good_answers += 1
+                                    else:
+                                        wrong_answers += 1
+
                                 except:
                                     pass
 
-                            if answer == (x + y):
-                                good_answers += 1
 
-                            elif
 
 
                             else:
-                                wrong_answers += 1
+
 
                         else:
                             print(f"Score: {good_answers}")
