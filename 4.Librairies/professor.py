@@ -8,6 +8,8 @@ def main():
 
             if not get_level(levelselect) is False: # Vérifier la validité du niveau demandé.
                 generate_integer(levelselect)
+                x = int(x)
+                y = int(y)
                 answer = input(f"{x}+{y}= ")
 
                 if answer == (x + y):
@@ -30,10 +32,10 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
 
     userinput = int(input(l))
 
-    if not 0 < userinput < 4:
-        return False
+    if 0 < userinput < 4:
+        return l
     else:
-        return True
+        return False
 
 if __name__ == "__main__":
     main()
