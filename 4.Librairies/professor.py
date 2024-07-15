@@ -6,7 +6,7 @@ y = 0
 
 def main():
 
-    levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
+    
     good_answers = 0
     wrong_answers = 0
 
@@ -28,12 +28,12 @@ def main():
                     print(f"Score: {good_answers}")
                     break
             else:
-                if levelselect is False:
-                    raise ValueError
+                raise ValueError
 
         except ValueError:
             pass
-
+        except EOFError:
+            break
         except:
             pass
 
