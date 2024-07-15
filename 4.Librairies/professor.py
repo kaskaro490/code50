@@ -28,10 +28,11 @@ def main():
                     print(f"Score: {good_answers}")
                     break
             else:
-                
+                if levelselect is False:
+                    return 
 
-        except EOFError:
-            break
+
+
         except:
             pass
 
