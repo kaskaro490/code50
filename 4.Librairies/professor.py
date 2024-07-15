@@ -27,7 +27,8 @@ def main():
                 else:
                     print(f"Score: {good_answers}")
                     break
-
+            else:
+                
 
         except EOFError:
             break
