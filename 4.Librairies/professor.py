@@ -18,7 +18,7 @@ def main():
 
                 while attempts < 4: # Number of attempts between 1 and 3
                     try:
-                        answer = int(input(f"{x} +{y}= "))
+                        answer = int(input(f"{x} + {y} = "))
 
                         if answer == (x + y):
                             good_answers += 1
