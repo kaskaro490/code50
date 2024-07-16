@@ -2,19 +2,10 @@ import random
 import sys
 
 def main():
-    while True:
-        try:
+
             n = int(get_level("Level: ")) # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
              # Vérifier la validité du niveau demandé.
             problems(n)
-
-
-        except ValueError:
-            pass
-        except EOFError:
-            break
-
-
 
 def problems(n):
     attempts = 0
@@ -69,13 +60,21 @@ def generate_integer(l): # Retourner un entier non négatif généré aléatoire
         return int(result)
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
+        while True:
+            try:
+                n = int(input(l))
 
-    n = int(input(l))
+                if 0 < n < 4:
+                    return n
 
-    if 0 < n < 4:
-        return n
-    else:
-        raise ValueError
+            except ValueError:
+                pass
+            except EOFError:
+                break
+
+
+
+
 
 
 if __name__ == "__main__":
