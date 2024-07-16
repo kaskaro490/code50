@@ -14,7 +14,7 @@ def main():
 
 
 
-                    try:
+
                         if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
                             x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
                             y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
@@ -37,18 +37,7 @@ def main():
                         else:
                             print(f"Score: {good_answers}")
                             break
-                    except ValueError:
-                        pass
-                    except EOFError:
-                        break
-            else:
-                raise ValueError
-        except ValueError:
-                    pass
-        except EOFError:
-                    break
-        except:
-                    pass
+
 
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
