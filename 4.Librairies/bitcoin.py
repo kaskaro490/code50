@@ -1,6 +1,6 @@
 import sys
 import requests
-import json
+
 
 def main():
 
@@ -14,4 +14,4 @@ def coindeskapi():
     try:
 
     except requests.RequestException:
-        
+
