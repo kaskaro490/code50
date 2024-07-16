@@ -18,10 +18,9 @@ def main():
 
                 while attempts < 4: # Number of attempts between 1 and 3
                     try:
-                        answer = int(input(f"{x}+{y}= "))
+                        answer = int(input(f"{x} +{y}= "))
 
                         if answer == (x + y):
-
                             good_answers += 1
                             break
                         elif attempts == 2:
@@ -31,7 +30,7 @@ def main():
                         else:
                             print("EEE")
                             attempts += 1
-                            
+
                     except ValueError:
                         pass
                     except EOFError:
