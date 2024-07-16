@@ -3,12 +3,18 @@ import requests
 
 
 def main():
-    if len(sys.argv) != 2:
+    if not len(sys.argv) != 2:
+        try:
+            n= float(sys.argv[1])
+            print(n)
 
-        sys.exit("exit")
-    else:
-        n = sys.argv[1]
-        print(n)
+        except ValueError:
+            sys.exit("exit")
+
+        except TypeError:
+            sys.exit("exit")
+
+
 
 
 
