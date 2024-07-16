@@ -1,6 +1,5 @@
 import sys
 import requests
-import json
 
 def main():
 
