@@ -35,7 +35,7 @@ def problems(n):
                             attempts = 0
                             good_answers += 1
                             break
-                        elif attempts == 3:
+                        elif attempts == 2:
                             wrong_answers += 1
                             print(x+y)
                             break
