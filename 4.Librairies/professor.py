@@ -21,7 +21,7 @@ def main():
                         answer = int(input(f"{x} + {y} = "))
 
                         if answer == (x + y):
-                            good_answers += 118
+                            good_answers += 1
 
                             break
                         elif attempts == 2:
