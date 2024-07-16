@@ -3,15 +3,15 @@ import requests
 
 
 def main():
-    n = getnum()
-    print(n)
-
-def getnum():
     if len(sys.argv) != 2:
-        sys.exit()
+
+        sys.exit("exit")
     else:
         n = sys.argv[1]
-        return n
+        print(n)
+
+
+
 
 
 #def coindeskapi():
