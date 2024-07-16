@@ -4,10 +4,10 @@ import sys
 def main():
 
     level = int(get_level("Level: ")) # Prompt the user to enter a level (1, 2 or 3) until a valid entry is received.
-    problems(n)
-    print(f"Score: {good_answers}")
 
-def problems(level):
+
+
+
     attempts = 0
     good_answers = 0
     wrong_answers = 0
@@ -45,7 +45,7 @@ def problems(level):
         except ValueError:
             pass
 
-
+    print(f"Score: {good_answers}")
 
 def generate_integer(level): # Return a randomly generated non-negative integer with the number of digits specified according to the level.
 
@@ -61,7 +61,7 @@ def get_level(l): # Validate user level entry, returning 1, 2 or 3.
             try:
                 level = int(input(l))
 
-                if 0 < n < 4: # Check the validity of the level requested.
+                if 0 < level < 4: # Check the validity of the level requested.
                     return level
                 else:
                     raise ValueError
