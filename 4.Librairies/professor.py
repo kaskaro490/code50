@@ -30,7 +30,7 @@ def problems(levelselect):
                 while attempts < 4: # Nombre de tentatives entre 1 et 3
                     try:
                         answer = int(input(f"{x}+{y}= "))
-                        
+
                         if answer == (x + y):
                             attempts = 0
                             good_answers += 1
@@ -39,6 +39,8 @@ def problems(levelselect):
                             wrong_answers += 1
                             print(x+y)
                             break
+                        else:
+                            attempts += 1
                     except EOFError:
                         break
                     except:
