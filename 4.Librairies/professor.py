@@ -1,9 +1,9 @@
 import random
-import sys
+
 
 def main():
 
-    level = int(get_level("Level: ")) # Prompt the user to enter a level (1, 2 or 3) until a valid entry is received.
+    level = int(get_level()) # Prompt the user to enter a level (1, 2 or 3) until a valid entry is received.
 
     attempts = 0
     good_answers = 0
@@ -35,9 +35,8 @@ def main():
                     except ValueError:
                         pass
                     except EOFError:
-                        break
-                    except:
-                        pass
+                        raise EOFError
+
             else:
                 return print(good_answers)
 
@@ -59,10 +58,10 @@ def generate_integer(level): # Return a randomly generated non-negative integer 
     else:
         raise ValueError
 
-def get_level(l): # Validate user level entry, returning 1, 2 or 3.
+def get_level(): # Validate user level entry, returning 1, 2 or 3.
         while True:
             try:
-                level = int(input(l)).strip()
+                level = int(input("Level: ")).strip()
 
                 if 0 < level < 4: # Check the validity of the level requested.
                     return level
@@ -73,10 +72,6 @@ def get_level(l): # Validate user level entry, returning 1, 2 or 3.
                 pass
             except EOFError:
                 break
-
-
-
-
 
 
 if __name__ == "__main__":
