@@ -61,7 +61,7 @@ def generate_integer(level): # Return a randomly generated non-negative integer 
 def get_level(): # Validate user level entry, returning 1, 2 or 3.
         while True:
             try:
-                level = int(input("Level: ")).strip()
+                level = int(input("Level: "))
 
                 if 0 < level < 4: # Check the validity of the level requested.
                     return level
