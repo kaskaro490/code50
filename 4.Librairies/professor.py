@@ -5,12 +5,10 @@ def main():
 
     level = int(get_level("Level: ")) # Prompt the user to enter a level (1, 2 or 3) until a valid entry is received.
 
-
-
-
     attempts = 0
     good_answers = 0
     wrong_answers = 0
+
     while True:
         try:
             if good_answers + wrong_answers != 10: # Number of problems less than 10
