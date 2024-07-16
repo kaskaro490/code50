@@ -8,7 +8,8 @@ def main():
         try:
             n= float(sys.argv[1])
             print(n)
-            currentprice = 
+            coindeskjson = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+            
 
         except requests.RequestException:
             sys.exit("RequestException")
