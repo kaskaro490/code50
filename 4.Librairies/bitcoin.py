@@ -7,10 +7,11 @@ def main():
     print(numbit)
 
 def getnum():
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         sys.exit()
     else:
         numbit = sys.argv[1]
+        return numbit
 
 
 #def coindeskapi():
