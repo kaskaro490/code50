@@ -1,10 +1,12 @@
 import random
 
-x = 0
-y = 0
+
 
 
 def main():
+    attempts = 0
+    good_answers = 0
+    wrong_answers = 0
 
     while True:
         try:
@@ -23,7 +25,7 @@ def main():
     while True:
         try:
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
-                print("ok")
+                
                 x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
                 y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
 
