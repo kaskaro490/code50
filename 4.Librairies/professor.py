@@ -7,7 +7,7 @@ def main():
             if levelselect is False: # Vérifier la validité du niveau demandé.
                 raise ValueError
             else:
-                problems()
+                problems(levelselect)
         except ValueError:
             pass
         except EOFError:
@@ -16,7 +16,7 @@ def main():
             break
 
 
-def problems():
+def problems(levelselect):
     attempts = 0
     good_answers = 0
     wrong_answers = 0
