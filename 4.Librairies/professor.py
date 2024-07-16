@@ -5,38 +5,46 @@ y = 0
 attempts = 0
 
 def main():
-    good_answers = 0
-    wrong_answers = 0
+
     while True:
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
             if not levelselect is False: # Vérifier la validité du niveau demandé.
+                break
+        except ValueError:
+            pass
+        except EOFError:
+            break
+        except:
+            pass
 
+    good_answers = 0
+    wrong_answers = 0
 
+    while True:
+        try:
+            if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
+                x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
+                y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
 
-
-                        if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
-                            x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
-                            y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
-
-                            while attempts < 4: # Nombre de tentatives entre 1 et 3
-                                try:
-                                    answer = int(input(f"{x}+{y}= "))
-                                    attempts += 1
-                                    if answer == (x + y):
-                                        good_answers += 1
-                                        attempts = 0
-                                        break
-                                    elif attempts == 3:
-                                        wrong_answers += 1
-                                        print(x+y)
-                                        break
-
-                                except:
-                                    pass
-                        else:
-                            print(f"Score: {good_answers}")
+                while attempts < 4: # Nombre de tentatives entre 1 et 3
+                    try:
+                        answer = int(input(f"{x}+{y}= "))
+                        attempts += 1
+                        if answer == (x + y):
+                            good_answers += 1
+                            attempts = 0
                             break
+                        elif attempts == 3:
+                            wrong_answers += 1
+                            print(x+y)
+                            break
+
+                    except:
+                        pass
+            else:
+                print(f"Score: {good_answers}")
+                break
 
 
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
