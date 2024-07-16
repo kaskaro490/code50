@@ -1,4 +1,5 @@
 import random
+import sys
 
 def main():
     while True:
@@ -46,7 +47,7 @@ def problems(n):
                         pass
             else:
                 print(f"Score: {good_answers}")
-                break
+                sys.exit()
         except EOFError:
             break
 
