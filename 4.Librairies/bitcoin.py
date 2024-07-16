@@ -7,15 +7,15 @@ def main():
     if not len(sys.argv) != 2:
         try:
             n= float(sys.argv[1])
-            print("1")
+
             coindeskjson = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-            print("2")
+
             pythonjson = coindeskjson.json()
-            print("3")
+
             currentprice = pythonjson["bpi"]["USD"]["rate_float"]
-            print("4")
+
             totalcost = currentprice * n
-            print("5")
+
             print(f"${totalcost:,.4f}")
 
 
@@ -27,5 +27,6 @@ def main():
 
         except TypeError:
             sys.exit("TypeError")
+    
 
 main()
