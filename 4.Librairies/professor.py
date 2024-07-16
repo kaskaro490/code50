@@ -12,7 +12,6 @@ def main():
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
             if not levelselect is False: # Vérifier la validité du niveau demandé.
-
                 break
         except ValueError:
             pass
@@ -25,8 +24,8 @@ def main():
 
     while True:
         try:
-            print("ok")
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
+                print("ok")
                 x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
                 y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
 
@@ -48,9 +47,10 @@ def main():
             else:
                 print(f"Score: {good_answers}")
                 break
-        except:
+        except EOFError:
+            break
+        except ValueError:
             pass
-
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
     if l == 1:
