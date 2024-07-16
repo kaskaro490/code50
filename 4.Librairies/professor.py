@@ -51,11 +51,11 @@ def main():
 def generate_integer(level): # Return a randomly generated non-negative integer with the number of digits specified according to the level.
 
     if level == 1:
-        return int(random.randint(0,9))
+        return random.randint(0,9)
     elif level == 2:
-        return int(random.randint(10,99))
+        return random.randint(10,99)
     elif level ==3:
-        return int(random.randint(100,999))
+        return random.randint(100,999)
     else:
         raise ValueError
 
