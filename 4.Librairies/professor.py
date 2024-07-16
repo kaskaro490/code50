@@ -1,10 +1,6 @@
 import random
 
 def main():
-    attempts = 0
-    good_answers = 0
-    wrong_answers = 0
-
     while True:
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
@@ -18,7 +14,10 @@ def main():
             pass
 
 
-
+def problems():
+    attempts = 0
+    good_answers = 0
+    wrong_answers = 0
     while True:
         try:
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
