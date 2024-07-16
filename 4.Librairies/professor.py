@@ -36,14 +36,14 @@ def main():
                     except:
                         pass
             else:
-                return good_answers
+                return print(good_answers)
 
         except EOFError:
             break
         except ValueError:
             pass
 
-    print(good_answers)
+
 
 def generate_integer(level): # Return a randomly generated non-negative integer with the number of digits specified according to the level.
 
