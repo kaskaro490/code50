@@ -31,6 +31,9 @@ def main():
                         else:
                             print("EEE")
                             attempts += 1
+                            raise ValueError
+                    except ValueError:
+                        pass
                     except EOFError:
                         break
                     except:
@@ -53,6 +56,8 @@ def generate_integer(level): # Return a randomly generated non-negative integer 
         return int(random.randint(10,99))
     elif level ==3:
         return int(random.randint(100,999))
+    else:
+        raise ValueError
 
 def get_level(l): # Validate user level entry, returning 1, 2 or 3.
         while True:
