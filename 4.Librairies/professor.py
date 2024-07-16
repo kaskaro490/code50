@@ -14,9 +14,7 @@ def main():
             if not levelselect is False: # Vérifier la validité du niveau demandé.
                 break
         except ValueError:
-            break
-        except EOFError:
-            break
+            pass
         except:
             pass
 
