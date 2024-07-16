@@ -3,16 +3,15 @@ import requests
 
 
 def main():
-    getnum()
-    numbit = sys.argv[1]
-    print(numbit)
+    n = getnum()
+    print(n)
 
 def getnum():
     if len(sys.argv) != 2:
         sys.exit()
     else:
-
-        return numbit
+        n = sys.argv[1]
+        return n
 
 
 #def coindeskapi():
