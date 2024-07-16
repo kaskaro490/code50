@@ -3,7 +3,7 @@ import sys
 
 def main():
 
-    n = int(get_level("Level: ")) # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
+    n = int(get_level("Level: ")) # Prompt the user to enter a level (1, 2 or 3) until a valid entry is received.
     problems(n)
 
 def problems(n):
@@ -12,12 +12,12 @@ def problems(n):
     wrong_answers = 0
     while True:
         try:
-            if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
+            if good_answers + wrong_answers != 10: # Number of problems less than 10
                 attempts = 0
-                x = generate_integer(n) # Générer un x aléatoire entre 0 et 9
-                y = generate_integer(n) # Générer un y aléatoire entre 0 et 9
+                x = generate_integer(n) # Generate a random x between 0 and 9
+                y = generate_integer(n) # Generate a random y between 0 and 9
 
-                while attempts < 4: # Nombre de tentatives entre 1 et 3
+                while attempts < 4: # Number of attempts between 1 and 3
                     try:
                         answer = int(input(f"{x}+{y}= "))
 
@@ -46,7 +46,7 @@ def problems(n):
 
 
 
-def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
+def generate_integer(l): # Return a randomly generated non-negative integer with the number of digits specified according to the level.
 
     if l == 1:
         return int(random.randint(0,9))
@@ -55,17 +55,17 @@ def generate_integer(l): # Retourner un entier non négatif généré aléatoire
     elif l ==3:
         return int(random.randint(100,999))
 
-def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
+def get_level(l): # Validate user level entry, returning 1, 2 or 3.
         while True:
             try:
                 n = int(input(l))
 
-                if 0 < n < 4: # Vérifier la validité du niveau demandé.
+                if 0 < n < 4: # Check the validity of the level requested.
                     return n
                 else:
                     raise ValueError
             except ValueError:
-                pass
+                break
             except EOFError:
                 break
 
