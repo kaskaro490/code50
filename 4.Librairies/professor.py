@@ -4,10 +4,9 @@ def main():
     while True:
         try:
             n = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
-            if not levelselect is False: # Vérifier la validité du niveau demandé.
-                problems(levelselect)
-            else:
-                raise ValueError
+             # Vérifier la validité du niveau demandé.
+            problems(n)
+
 
         except ValueError:
             pass
@@ -16,7 +15,7 @@ def main():
 
 
 
-def problems(levelselect):
+def problems(n):
     attempts = 0
     good_answers = 0
     wrong_answers = 0
@@ -24,8 +23,8 @@ def problems(levelselect):
         try:
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
 
-                x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
-                y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
+                x = generate_integer(n) # Générer un x aléatoire entre 0 et 9
+                y = generate_integer(n) # Générer un y aléatoire entre 0 et 9
 
                 while attempts < 4: # Nombre de tentatives entre 1 et 3
                     try:
@@ -58,13 +57,19 @@ def generate_integer(l): # Retourner un entier non négatif généré aléatoire
     if l == 1:
         result = random.randint(0,9)
         return int(result)
+    elif l == 2:
+        result = random.randint(0,9)
+        return int(result)
+    elif l ==3:
+        result = random.randint(0,9)
+        return int(result)
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
 
-    userinput = int(input(l))
+    n = int(input(l))
 
-    if 0 < userinput < 4:
-        return userinput
+    if 0 < n < 4:
+        return n
     else:
         raise ValueError
 
