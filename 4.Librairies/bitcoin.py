@@ -9,10 +9,10 @@ def main():
             print(n)
 
         except ValueError:
-            sys.exit("exit")
+            sys.exit("ValueError")
 
         except TypeError:
-            sys.exit("exit")
+            sys.exit("TypeError")
 
 
 
@@ -25,3 +25,4 @@ def main():
 
  #   except requests.RequestException:
 
+main()
