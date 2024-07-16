@@ -1,8 +1,5 @@
 import random
 
-
-
-
 def main():
     attempts = 0
     good_answers = 0
@@ -48,8 +45,7 @@ def main():
                 break
         except EOFError:
             break
-        except ValueError:
-            pass
+
 
 
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
