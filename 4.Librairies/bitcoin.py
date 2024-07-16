@@ -23,10 +23,12 @@ def main():
             sys.exit("RequestException")
 
         except ValueError:
-            sys.exit("ValueError")
+            sys.exit("Command-line argument is not a number")
 
         except TypeError:
             sys.exit("TypeError")
-    
+    elif len(sys.argv) == 0:
+        sys.exit("Missing command-line argument")
+
 
 main()
