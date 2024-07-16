@@ -10,8 +10,7 @@ def main():
             print("1")
             coindeskjson = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
             print("2")
-            
-            #pythonjson = json.loads(coindeskjson)
+            pythonjson = coindeskjson.json()
             print("3")
             currentprice = coindeskjson["bpi"]["USD"]["rate_float"]
             print("4")
