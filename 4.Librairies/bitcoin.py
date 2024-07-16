@@ -13,11 +13,8 @@ def main():
 
         except TypeError:
             sys.exit("TypeError")
-
-
-
-
-
+    #else:
+      #  sys.exit()
 
 
 #def coindeskapi():
