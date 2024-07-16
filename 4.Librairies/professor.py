@@ -43,7 +43,7 @@ def main():
         except ValueError:
             pass
 
-    print(f"Score: {good_answers}")
+    print(good_answers)
 
 def generate_integer(level): # Return a randomly generated non-negative integer with the number of digits specified according to the level.
 
