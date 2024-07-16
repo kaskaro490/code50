@@ -26,7 +26,8 @@ def main():
                             break
                         elif attempts == 2:
                             wrong_answers += 1
-                            print(x+y)
+                            result = x+y
+                            print(f"{x} + {y} = {result}")
                             break
                         else:
                             print("EEE")
