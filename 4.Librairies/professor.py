@@ -62,7 +62,8 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
 
                 if 0 < n < 4: # Vérifier la validité du niveau demandé.
                     return n
-
+                else:
+                    raise ValueError
             except ValueError:
                 pass
             except EOFError:
