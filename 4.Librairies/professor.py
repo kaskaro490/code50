@@ -40,6 +40,7 @@ def problems(n):
                             print(x+y)
                             break
                         else:
+                            print("EEE")
                             attempts += 1
                     except EOFError:
                         break
