@@ -3,7 +3,7 @@ import requests
 
 
 def main():
-
+numbit = 0
     if len(sys.argv) != 2:
         sys.exit()
     else:
