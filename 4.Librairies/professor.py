@@ -13,7 +13,7 @@ def problems(n):
     while True:
         try:
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
-
+                attempts = 0
                 x = generate_integer(n) # Générer un x aléatoire entre 0 et 9
                 y = generate_integer(n) # Générer un y aléatoire entre 0 et 9
 
@@ -22,7 +22,7 @@ def problems(n):
                         answer = int(input(f"{x}+{y}= "))
 
                         if answer == (x + y):
-                            attempts = 0
+
                             good_answers += 1
                             break
                         elif attempts == 2:
@@ -49,14 +49,11 @@ def problems(n):
 def generate_integer(l): # Retourner un entier non négatif généré aléatoirement avec le nombre de chiffres spécifié en fonction du niveau.
 
     if l == 1:
-        result = random.randint(0,9)
-        return int(result)
+        return int(random.randint(0,9))
     elif l == 2:
-        result = random.randint(10,99)
-        return int(result)
+        return int(random.randint(10,99))
     elif l ==3:
-        result = random.randint(100,999)
-        return int(result)
+        return int(random.randint(100,999))
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
         while True:
