@@ -50,6 +50,8 @@ def problems(n):
                 sys.exit()
         except EOFError:
             break
+        except ValueError:
+            pass
 
 
 
