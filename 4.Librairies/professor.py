@@ -4,7 +4,7 @@ import sys
 def main():
     while True:
         try:
-            n = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
+            n = int(get_level("Level: ")) # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
              # Vérifier la validité du niveau demandé.
             problems(n)
 
