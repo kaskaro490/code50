@@ -3,17 +3,18 @@ import requests
 
 
 def main():
-numbit = getnum(sys.argv)
+    numbit = getnum()
+    print(numbit)
 
-def getnum(sys.argv):
+def getnum():
     if len(sys.argv) != 2:
         sys.exit()
     else:
         numbit = sys.argv[1]
 
 
-def coindeskapi():
-    try:
+#def coindeskapi():
+ #   try:
 
-    except requests.RequestException:
+ #   except requests.RequestException:
 
