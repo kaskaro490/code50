@@ -62,7 +62,7 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
     userinput = int(input(l))
 
     if 0 < userinput < 4:
-        return True
+        return userinput
     else:
         return False
 
