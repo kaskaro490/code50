@@ -71,7 +71,7 @@ def get_level(): # Validate user level entry, returning 1, 2 or 3.
                 print("value error")
                 pass
             except EOFError:
-                break
+                raise EOFError
 
 
 if __name__ == "__main__":
