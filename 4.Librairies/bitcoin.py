@@ -26,7 +26,7 @@ def main():
 
         except TypeError:
             sys.exit("TypeError")
-    elif len(sys.argv) == 0:
+    elif len(sys.argv) == 1:
         sys.exit("Missing command-line argument")
 
 
