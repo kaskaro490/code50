@@ -32,8 +32,8 @@ def problems(levelselect):
                         answer = int(input(f"{x}+{y}= "))
                         attempts += 1
                         if answer == (x + y):
-                            good_answers += 1
                             attempts = 0
+                            good_answers += 1
                             break
                         elif attempts == 3:
                             wrong_answers += 1
@@ -72,21 +72,4 @@ if __name__ == "__main__":
 
 
 
-
-
-
-# 2. **Générer des problèmes de mathématiques** :
-#    - Générer aléatoirement 10 problèmes mathématiques.
-#    - Chaque problème doit être formaté comme `X + Y =`.
-#    - `X` et `Y` doivent être des entiers non négatifs avec un nombre de chiffres correspondant au niveau choisi.
-
-# 3. **L'utilisateur résout les problèmes** :
-#    - Demander à l'utilisateur de résoudre chaque problème mathématique.
-#    - Si la réponse est incorrecte ou n'est pas un nombre, afficher `EEE` et demander à nouveau à l'utilisateur.
-#    - Permettre jusqu'à trois essais pour chaque problème.
-#    - Après trois tentatives incorrectes, afficher la réponse correcte.
-
-# 4. **Afficher le score de l'utilisateur** :
-#    - Garder une trace du nombre de réponses correctes.
-#    - À la fin, afficher le score de l'utilisateur sur 10.
 
