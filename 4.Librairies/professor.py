@@ -7,6 +7,7 @@ def main():
             if levelselect is False: # Vérifier la validité du niveau demandé.
                 raise ValueError
             else:
+                levelselect = l
                 problems(levelselect)
         except ValueError:
             pass
