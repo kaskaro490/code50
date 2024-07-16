@@ -3,11 +3,12 @@ import requests
 
 
 def main():
-    
+
     if not len(sys.argv) != 2:
         try:
             n= float(sys.argv[1])
             print(n)
+            currentprice = 
 
         except requests.RequestException:
             sys.exit("RequestException")
