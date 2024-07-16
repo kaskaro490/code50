@@ -31,7 +31,7 @@ def main():
                         else:
                             print("EEE")
                             attempts += 1
-                            raise ValueError
+                            
                     except ValueError:
                         pass
                     except EOFError:
