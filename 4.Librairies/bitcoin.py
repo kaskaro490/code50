@@ -12,11 +12,11 @@ def main():
             print("2")
             pythonjson = coindeskjson.json()
             print("3")
-            currentprice = coindeskjson["bpi"]["USD"]["rate_float"]
+            currentprice = pythonjson["bpi"]["USD"]["rate_float"]
             print("4")
             totalcost = currentprice * n
             print("5")
-            print(f"${amount:{totalcost},.4f}")
+            print(f"${totalcost:,.4f}")
 
 
         except requests.RequestException:
