@@ -3,7 +3,9 @@ import requests
 
 
 def main():
-numbit = 0
+numbit = getnum(sys.argv)
+
+def getnum(sys.argv):
     if len(sys.argv) != 2:
         sys.exit()
     else:
