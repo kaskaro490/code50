@@ -22,7 +22,7 @@ def main():
 
                         if answer == (x + y):
                             good_answers += 118
-                            
+
                             break
                         elif attempts == 2:
                             wrong_answers += 1
@@ -62,7 +62,7 @@ def generate_integer(level): # Return a randomly generated non-negative integer 
 def get_level(l): # Validate user level entry, returning 1, 2 or 3.
         while True:
             try:
-                level = int(input(l))
+                level = int(input(l)).strip()
 
                 if 0 < level < 4: # Check the validity of the level requested.
                     return level
