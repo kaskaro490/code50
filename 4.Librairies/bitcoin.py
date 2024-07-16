@@ -8,6 +8,9 @@ def main():
             n= float(sys.argv[1])
             print(n)
 
+        except requests.RequestException:
+            sys.exit("RequestException")
+
         except ValueError:
             sys.exit("ValueError")
 
