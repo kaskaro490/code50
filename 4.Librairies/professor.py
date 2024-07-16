@@ -65,7 +65,7 @@ def get_level(l): # Validate user level entry, returning 1, 2 or 3.
                 else:
                     raise ValueError
             except ValueError:
-                break
+                pass
             except EOFError:
                 break
 
