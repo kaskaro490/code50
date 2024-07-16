@@ -12,6 +12,8 @@ def main():
                 break
         except ValueError:
             break
+        except EOFError:
+            break
         except:
             pass
 
