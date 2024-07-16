@@ -4,11 +4,11 @@ def main():
     while True:
         try:
             levelselect = get_level("Level: ") # Demander à l'utilisateur de saisir un niveau (1, 2 ou 3) jusqu'à ce qu'une entrée valide soit reçue.
-            if levelselect is False: # Vérifier la validité du niveau demandé.
-                raise ValueError
-            else:
-                levelselect = l
+            if levelselect is True: # Vérifier la validité du niveau demandé.
                 problems(levelselect)
+            else:
+                raise ValueError
+
         except ValueError:
             pass
         except EOFError:
@@ -63,7 +63,7 @@ def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 
     userinput = int(input(l))
 
     if 0 < userinput < 4:
-        return l
+        return userinput
     else:
         return False
 
