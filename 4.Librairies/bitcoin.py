@@ -3,7 +3,7 @@ import requests
 
 
 def main():
-    if not len(sys.argv) != 2:
+    if len(sys.argv) != 2:
 
         sys.exit("exit")
     else:
