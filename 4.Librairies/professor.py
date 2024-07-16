@@ -58,10 +58,10 @@ def generate_integer(l): # Retourner un entier non négatif généré aléatoire
         result = random.randint(0,9)
         return int(result)
     elif l == 2:
-        result = random.randint(0,9)
+        result = random.randint(10,99)
         return int(result)
     elif l ==3:
-        result = random.randint(0,9)
+        result = random.randint(100,999)
         return int(result)
 
 def get_level(l): # Valider l'entrée du niveau de l'utilisateur, retournant 1, 2 ou 3.
