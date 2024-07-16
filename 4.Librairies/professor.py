@@ -11,7 +11,7 @@ def main():
 
     while True:
         try:
-            if good_answers + wrong_answers != 10: # Number of problems less than 10
+            if good_answers + wrong_answers < 10: # Number of problems less than 10
                 attempts = 0
                 x = generate_integer(level) # Generate a random x between 0 and 9
                 y = generate_integer(level) # Generate a random y between 0 and 9
