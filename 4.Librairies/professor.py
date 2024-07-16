@@ -25,7 +25,7 @@ def main():
     while True:
         try:
             if good_answers + wrong_answers != 10: # Nombre de problèmes inférieur à 10
-                
+
                 x = generate_integer(levelselect) # Générer un x aléatoire entre 0 et 9
                 y = generate_integer(levelselect) # Générer un y aléatoire entre 0 et 9
 
@@ -41,7 +41,8 @@ def main():
                             wrong_answers += 1
                             print(x+y)
                             break
-
+                    except EOFError:
+                        break
                     except:
                         pass
             else:
