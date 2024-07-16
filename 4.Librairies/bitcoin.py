@@ -10,7 +10,9 @@ def main():
             coindeskjson = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
             pythonjson = json.loads(coindeskjson)
             currentprice = pythonjson["bpi"]["USD"]["rate_float"]
-            
+            totalcost = currentprice * n
+            print(f"${amount:{totalcost},.4f}")
+
 
         except requests.RequestException:
             sys.exit("RequestException")
