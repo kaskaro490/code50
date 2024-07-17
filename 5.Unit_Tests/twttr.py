@@ -3,6 +3,11 @@ def main():
    userinput = input("Input: ")
    #outputlist = twttr(input, vowels )
    print(twttr(userinput, vowels))
+
+
+
+def shorten(word):
+
 def twttr(userinput, vowels ):
    outputlist = []
    for letter in userinput:
@@ -10,16 +15,6 @@ def twttr(userinput, vowels ):
          outputlist.append(letter)
 
    return ''. join(outputlist)
-
-main()
-
-def main():
-    ...
-
-
-def shorten(word):
-    ...
-
 
 if __name__ == "__main__":
     main()
