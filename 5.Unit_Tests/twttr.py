@@ -8,13 +8,13 @@ def main():
 
 def shorten(word):
 
-def twttr(userinput, vowels ):
+#def twttr(userinput, vowels ):
    outputlist = []
    for letter in userinput:
       if not letter in vowels:
          outputlist.append(letter)
 
-   return ''. join(outputlist)
+   return ''.join(outputlist)
 
 if __name__ == "__main__":
     main()
