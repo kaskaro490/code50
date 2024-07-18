@@ -1,4 +1,4 @@
 from twttr import shorten
 
-def test_twttr(word, vowels):
-    assert shorten("twitter") == "twttr"
+def test_twttr():
+    assert shorten("twitter", vowels) == "twttr"
