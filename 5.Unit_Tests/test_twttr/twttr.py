@@ -1,5 +1,5 @@
 def main():
-   #vowels = ["a","e","i","o","u","A","E","I","O","U"]
+   vowels = ["a","e","i","o","u","A","E","I","O","U"]
    word = input("Input: ")
    print(shorten(word, vowels))
 
