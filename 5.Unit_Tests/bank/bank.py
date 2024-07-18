@@ -7,9 +7,9 @@ def main():
 
 
 def value(greeting):
-
-    firstletter = greeting[0]
     greeting = greeting.strip().lower()
+    firstletter = greeting[0]
+
     if greeting == "hello" or greeting.startswith("hello"):
         return 0
     elif greeting[0] == "h":
