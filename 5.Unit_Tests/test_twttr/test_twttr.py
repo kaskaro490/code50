@@ -1,4 +1,4 @@
 from twttr import shorten
 
 def test_twttr():
-    assert "twitter" == "twttr"
+    assert transform_to_twttr("twitter") == "twttr"
