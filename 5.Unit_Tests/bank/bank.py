@@ -2,13 +2,13 @@
 
 def main():
     greeting = input("Greeting: ").strip().lower()
-²   value = value(greeting)
-    print(f"${value}")
+
+    print(f"$ {value(greeting)}")
 
 
 def value(greeting):
 
-    firstletter = answer[0]
+    firstletter = greeting[0]
     greeting = greeting.strip().lower()
     if greeting == "hello" or greeting.startswith("hello"):
         return 0
