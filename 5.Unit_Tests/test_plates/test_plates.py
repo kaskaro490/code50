@@ -10,4 +10,4 @@ def test_is_valid():
     assert is_valid("CS50") == True
     assert is_valid("CS50") == True
 
-def tes_check_length
+def test_check_length():
